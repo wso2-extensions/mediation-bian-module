@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/BIAN-3/BIAN/ACHOperations" name="ACHOperations" version="11.0.0" version-type="url" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="PUT" uri-template="/ACHOperations/{achoperationsid}/Update">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.achoperationsid')" name="achoperationsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/ACHOperations/{achoperationsid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.achoperationsid')" name="achoperationsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/ACHOperations/{achoperationsid}/InboundACH/{inboundachid}/Initiate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.achoperationsid')" name="achoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.inboundachid')" name="inboundachid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/ACHOperations/{achoperationsid}/InboundACH/{inboundachid}/Update">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.achoperationsid')" name="achoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.inboundachid')" name="inboundachid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/ACHOperations/{achoperationsid}/InboundACH/{inboundachid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.achoperationsid')" name="achoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.inboundachid')" name="inboundachid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/ACHOperations/{achoperationsid}/OutboundACH/{outboundachid}/Initiate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.achoperationsid')" name="achoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.outboundachid')" name="outboundachid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/ACHOperations/{achoperationsid}/OutboundACH/{outboundachid}/Update">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.achoperationsid')" name="achoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.outboundachid')" name="outboundachid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <call>
+                <endpoint key="ACHOperationsEndpoint"/>
+            </call>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/ACHOperations/{achoperationsid}/OutboundACH/{outboundachid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.achoperationsid')" name="achoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.outboundachid')" name="outboundachid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/ACHOperations/{achoperationsid}/Warehousing/{warehousingid}/Initiate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.achoperationsid')" name="achoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.warehousingid')" name="warehousingid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/ACHOperations/{achoperationsid}/Warehousing/{warehousingid}/Update">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.achoperationsid')" name="achoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.warehousingid')" name="warehousingid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/ACHOperations/{achoperationsid}/Warehousing/{warehousingid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.achoperationsid')" name="achoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.warehousingid')" name="warehousingid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/ACHOperations/{achoperationsid}/ClearingandSettlement/{clearingandsettlementid}/Initiate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.achoperationsid')" name="achoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.clearingandsettlementid')" name="clearingandsettlementid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/ACHOperations/{achoperationsid}/ClearingandSettlement/{clearingandsettlementid}/Update">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.achoperationsid')" name="achoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.clearingandsettlementid')" name="clearingandsettlementid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/ACHOperations/{achoperationsid}/ClearingandSettlement/{clearingandsettlementid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.achoperationsid')" name="achoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.clearingandsettlementid')" name="clearingandsettlementid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/ACHOperations/{achoperationsid}/Reconciliation/{reconciliationid}/Initiate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.achoperationsid')" name="achoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.reconciliationid')" name="reconciliationid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/ACHOperations/{achoperationsid}/Reconciliation/{reconciliationid}/Update">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.achoperationsid')" name="achoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.reconciliationid')" name="reconciliationid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/ACHOperations/{achoperationsid}/Reconciliation/{reconciliationid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.achoperationsid')" name="achoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.reconciliationid')" name="reconciliationid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

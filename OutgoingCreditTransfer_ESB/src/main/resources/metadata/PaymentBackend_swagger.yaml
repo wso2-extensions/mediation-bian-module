@@ -1,0 +1,182 @@
+openapi: 3.0.1
+info:
+  title: PaymentBackend
+  description: API Definition of PaymentBackend
+  version: 1.0.0
+servers:
+- url: http://localhost:8290/PaymentBackend
+paths:
+  /PaymentInitiation/Initiate:
+    post:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response
+  /PaymentOrder/PaymentOrderDetails:
+    get:
+      responses:
+        default:
+          description: Default response
+  /PaymentOrder/Initiate:
+    post:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response
+  /PaymentExecution/PaymentExecutionDetails:
+    get:
+      responses:
+        default:
+          description: Default response
+  /CurrentAccount/{currentaccountid}/Retrieve:
+    get:
+      parameters:
+      - name: currentaccountid
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        default:
+          description: Default response
+  /PaymentExecution/Initiate:
+    post:
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response
+  /PositionKeeping/PositionKeepingDetails:
+    get:
+      responses:
+        default:
+          description: Default response
+  /PositionKeeping/{positionkeepingid}/Update:
+    put:
+      parameters:
+      - name: positionkeepingid
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response
+  /InternalBankAccount/InternalBankAccountDetails:
+    get:
+      responses:
+        default:
+          description: Default response
+  /InternalBankAccount/{internalbankaccountid}/Capture:
+    put:
+      parameters:
+      - name: internalbankaccountid
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response
+  /CorrespondentBankOperations/{correspondentbankoperationsid}/OutboundPayments/{outboundpaymentsid}/Exchange:
+    put:
+      parameters:
+      - name: correspondentbankoperationsid
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: outboundpaymentsid
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response
+  /ACHOperations/ACHOperationsDetails:
+    get:
+      responses:
+        default:
+          description: Default response
+  /CorrespondentBankOperations/CorrespondentBankOperationsDetails:
+    get:
+      responses:
+        default:
+          description: Default response
+  /FinancialGateway/FinancialGatewayDetails:
+    get:
+      responses:
+        default:
+          description: Default response
+  /RegulatoryCompliance/RegulatoryComplianceDetails:
+    get:
+      responses:
+        default:
+          description: Default response

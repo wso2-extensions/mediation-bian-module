@@ -1,0 +1,75 @@
+{
+  "$schema" : "http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#",
+  "outputType" : "JSON",
+  "id" : "http://wso2jsonschema.org",
+  "title" : "root",
+  "type" : "object",
+  "properties" : {
+    "PaymentOrderProcedure" : {
+      "id" : "http://wso2jsonschema.org/PaymentOrderProcedure",
+      "type" : "object",
+      "properties" : {
+        "PaymentTransactionInitiatorReference" : {
+          "id" : "http://wso2jsonschema.org/PaymentOrderProcedure/PaymentTransactionInitiatorReference",
+          "type" : "string"
+        },
+        "PayerReference" : {
+          "id" : "http://wso2jsonschema.org/PaymentOrderProcedure/PayerReference",
+          "type" : "string"
+        },
+        "PayerBankReference" : {
+          "id" : "http://wso2jsonschema.org/PaymentOrderProcedure/PayerBankReference",
+          "type" : "string"
+        },
+        "PayerProductInstanceReference" : {
+          "id" : "http://wso2jsonschema.org/PaymentOrderProcedure/PayerProductInstanceReference",
+          "type" : "string"
+        },
+        "PayeeReference" : {
+          "id" : "http://wso2jsonschema.org/PaymentOrderProcedure/PayeeReference",
+          "type" : "string"
+        },
+        "PayeeBankReference" : {
+          "id" : "http://wso2jsonschema.org/PaymentOrderProcedure/PayeeBankReference",
+          "type" : "string"
+        },
+        "PayeeProductInstanceReference" : {
+          "id" : "http://wso2jsonschema.org/PaymentOrderProcedure/PayeeProductInstanceReference",
+          "type" : "string"
+        },
+        "Amount" : {
+          "id" : "http://wso2jsonschema.org/PaymentOrderProcedure/Amount",
+          "type" : "string"
+        },
+        "Currency" : {
+          "id" : "http://wso2jsonschema.org/PaymentOrderProcedure/Currency",
+          "type" : "string"
+        },
+        "DateType" : {
+          "id" : "http://wso2jsonschema.org/PaymentOrderProcedure/DateType",
+          "type" : "string"
+        },
+        "PaymentMechanismType" : {
+          "id" : "http://wso2jsonschema.org/PaymentOrderProcedure/PaymentMechanismType",
+          "type" : "string"
+        },
+        "PaymentInstructions" : {
+          "id" : "http://wso2jsonschema.org/PaymentOrderProcedure/PaymentInstructions",
+          "type" : "string"
+        },
+        "InterestedParties" : {
+          "id" : "http://wso2jsonschema.org/PaymentOrderProcedure/InterestedParties",
+          "type" : "string"
+        },
+        "ProductType" : {
+          "id" : "http://wso2jsonschema.org/PaymentOrderProcedure/ProductType",
+          "type" : "string"
+        },
+        "SettlementInstructions" : {
+          "id" : "http://wso2jsonschema.org/PaymentOrderProcedure/SettlementInstructions",
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

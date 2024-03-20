@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:datamapper="http:///org/wso2/developerstudio/eclipse/gmf/datamapper" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_II3C8GRAEe6K0p45ZrgpmQ" type="DataMapper" name="FinancialGatewayConfig.datamapper_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_IPZv0GRAEe6K0p45ZrgpmQ" type="2002" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:Shape" xmi:id="_ZQpqUGRAEe6K0p45ZrgpmQ" type="3002" fontName=".AppleSystemUIFont">
+      <children xmi:type="notation:DecorationNode" xmi:id="_ZQqRYGRAEe6K0p45ZrgpmQ" type="5002"/>
+      <children xmi:type="notation:Shape" xmi:id="_ZQsGkGRAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+        <children xmi:type="notation:DecorationNode" xmi:id="_ZQsGkmRAEe6K0p45ZrgpmQ" type="5001"/>
+        <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQsGkWRAEe6K0p45ZrgpmQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_ZQsGk2RAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+        <children xmi:type="notation:DecorationNode" xmi:id="_ZQsGlWRAEe6K0p45ZrgpmQ" type="5001"/>
+        <children xmi:type="notation:Shape" xmi:id="_ZQ5h8GRAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_ZQ5h8mRAEe6K0p45ZrgpmQ" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_ZQ5h-mRAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.1/@node.0/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ5h-2RAEe6K0p45ZrgpmQ" x="-1" y="1"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_ZQ5h_GRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.1/@node.0/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ5h_WRAEe6K0p45ZrgpmQ"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.1/@node.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ5h8WRAEe6K0p45ZrgpmQ"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ZQ5h82RAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_ZQ5h9WRAEe6K0p45ZrgpmQ" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_ZQ6JAGRAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.1/@node.1/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ6JAWRAEe6K0p45ZrgpmQ" x="-1" y="1"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_ZQ6wEGRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.1/@node.1/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ6wEWRAEe6K0p45ZrgpmQ"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.1/@node.1"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ5h9GRAEe6K0p45ZrgpmQ"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ZQ5h9mRAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+          <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.1/@inNode"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ5h92RAEe6K0p45ZrgpmQ" x="-1" y="-11"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ZQ5h-GRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+          <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.1/@outNode"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ5h-WRAEe6K0p45ZrgpmQ"/>
+        </children>
+        <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQsGlGRAEe6K0p45ZrgpmQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_ZQsGlmRAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+        <children xmi:type="notation:DecorationNode" xmi:id="_ZQsGmGRAEe6K0p45ZrgpmQ" type="5001"/>
+        <children xmi:type="notation:Shape" xmi:id="_ZQ7XIGRAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_ZQ7XImRAEe6K0p45ZrgpmQ" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_ZQ7-MGRAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.0/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ7-MWRAEe6K0p45ZrgpmQ" x="-1" y="1"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_ZQ7-MmRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.0/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ7-M2RAEe6K0p45ZrgpmQ"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ7XIWRAEe6K0p45ZrgpmQ"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ZQ7XI2RAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_ZQ7XJWRAEe6K0p45ZrgpmQ" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_ZQ8lQGRAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.1/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ8lQWRAEe6K0p45ZrgpmQ" x="-1" y="1"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_ZQ9MUGRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.1/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ9MUWRAEe6K0p45ZrgpmQ"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.1"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ7XJGRAEe6K0p45ZrgpmQ"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ZQ7XJmRAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_ZQ7XKGRAEe6K0p45ZrgpmQ" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_ZQ9zYGRAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.2/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ9zYWRAEe6K0p45ZrgpmQ" x="-1" y="1"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_ZQ9zYmRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.2/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ9zY2RAEe6K0p45ZrgpmQ"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.2"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ7XJ2RAEe6K0p45ZrgpmQ"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ZQ7XKWRAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_ZQ7XK2RAEe6K0p45ZrgpmQ" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_ZQ-acGRAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.3/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ-acWRAEe6K0p45ZrgpmQ" x="-1" y="1"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_ZQ-acmRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.3/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ-ac2RAEe6K0p45ZrgpmQ"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.3"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ7XKmRAEe6K0p45ZrgpmQ"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ZQ7XLGRAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_ZQ7XLmRAEe6K0p45ZrgpmQ" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_ZQ_BgGRAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.4/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ_BgWRAEe6K0p45ZrgpmQ" x="-1" y="1"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_ZQ_BgmRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.4/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ_Bg2RAEe6K0p45ZrgpmQ"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.4"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ7XLWRAEe6K0p45ZrgpmQ"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ZQ7XL2RAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+          <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@inNode"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ7XMGRAEe6K0p45ZrgpmQ" x="-1" y="-11"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_ZQ7XMWRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+          <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@outNode"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQ7XMmRAEe6K0p45ZrgpmQ"/>
+        </children>
+        <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQsGl2RAEe6K0p45ZrgpmQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_ZQsGmWRAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+        <children xmi:type="notation:DecorationNode" xmi:id="_ZQsGm2RAEe6K0p45ZrgpmQ" type="5001"/>
+        <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.3"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQsGmmRAEe6K0p45ZrgpmQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_ZQsGnGRAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+        <children xmi:type="notation:DecorationNode" xmi:id="_ZQsGnmRAEe6K0p45ZrgpmQ" type="5001"/>
+        <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.4"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQsGnWRAEe6K0p45ZrgpmQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_ZQsGn2RAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+        <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@inNode"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQsGoGRAEe6K0p45ZrgpmQ" x="-1" y="-11"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_ZQsGoWRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+        <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@outNode"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQsGomRAEe6K0p45ZrgpmQ"/>
+      </children>
+      <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ZQpqUWRAEe6K0p45ZrgpmQ"/>
+    </children>
+    <element xmi:type="datamapper:Input" href="FinancialGatewayConfig.datamapper#//@input"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IPZv0WRAEe6K0p45ZrgpmQ" x="100" y="56" width="401" height="520"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_IPaW4GRAEe6K0p45ZrgpmQ" type="2003" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:Shape" xmi:id="_bHEZYGRAEe6K0p45ZrgpmQ" type="3011" fontName=".AppleSystemUIFont">
+      <children xmi:type="notation:DecorationNode" xmi:id="_bHEZYmRAEe6K0p45ZrgpmQ" type="5003"/>
+      <children xmi:type="notation:Shape" xmi:id="_bHG1oGRAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+        <children xmi:type="notation:DecorationNode" xmi:id="_bHG1omRAEe6K0p45ZrgpmQ" type="5001"/>
+        <children xmi:type="notation:Shape" xmi:id="_bHHcsGRAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_bHHcsmRAEe6K0p45ZrgpmQ" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_bHIDwGRAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.0/@node.0/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHIDwWRAEe6K0p45ZrgpmQ" x="-10" y="4"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_bHIDwmRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.0/@node.0/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHIDw2RAEe6K0p45ZrgpmQ"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.0/@node.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHHcsWRAEe6K0p45ZrgpmQ"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_bHHcs2RAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_bHHctWRAEe6K0p45ZrgpmQ" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_bHJR4GRAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.0/@node.1/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHJR4WRAEe6K0p45ZrgpmQ" x="-10" y="4"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_bHJR4mRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.0/@node.1/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHJR42RAEe6K0p45ZrgpmQ"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.0/@node.1"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHHctGRAEe6K0p45ZrgpmQ"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_bHHctmRAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+          <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.0/@inNode"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHHct2RAEe6K0p45ZrgpmQ" x="-1" y="-11"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_bHHcuGRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+          <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.0/@outNode"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHHcuWRAEe6K0p45ZrgpmQ"/>
+        </children>
+        <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHG1oWRAEe6K0p45ZrgpmQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_bHG1o2RAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+        <children xmi:type="notation:DecorationNode" xmi:id="_bHG1pWRAEe6K0p45ZrgpmQ" type="5001"/>
+        <children xmi:type="notation:Shape" xmi:id="_bHKgAGRAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_bHKgAmRAEe6K0p45ZrgpmQ" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_bHKgE2RAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.1/@node.0/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHKgFGRAEe6K0p45ZrgpmQ" x="-10" y="4"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_bHKgFWRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.1/@node.0/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHKgFmRAEe6K0p45ZrgpmQ"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.1/@node.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHKgAWRAEe6K0p45ZrgpmQ"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_bHKgA2RAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_bHKgBWRAEe6K0p45ZrgpmQ" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_bHLHEGRAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.1/@node.1/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHLHEWRAEe6K0p45ZrgpmQ" x="-10" y="4"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_bHLHEmRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.1/@node.1/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHLHE2RAEe6K0p45ZrgpmQ"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.1/@node.1"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHKgBGRAEe6K0p45ZrgpmQ"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_bHKgBmRAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_bHKgCGRAEe6K0p45ZrgpmQ" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_bHLuIGRAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.1/@node.2/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHLuIWRAEe6K0p45ZrgpmQ" x="-10" y="4"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_bHLuImRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.1/@node.2/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHLuI2RAEe6K0p45ZrgpmQ"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.1/@node.2"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHKgB2RAEe6K0p45ZrgpmQ"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_bHKgCWRAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_bHKgC2RAEe6K0p45ZrgpmQ" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_bHMVMGRAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.1/@node.3/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHMVMWRAEe6K0p45ZrgpmQ" x="-10" y="4"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_bHMVMmRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.1/@node.3/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHMVM2RAEe6K0p45ZrgpmQ"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.1/@node.3"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHKgCmRAEe6K0p45ZrgpmQ"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_bHKgDGRAEe6K0p45ZrgpmQ" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_bHKgDmRAEe6K0p45ZrgpmQ" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_bHM8QGRAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.1/@node.4/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHM8QWRAEe6K0p45ZrgpmQ" x="-10" y="4"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_bHM8QmRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.1/@node.4/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHM8Q2RAEe6K0p45ZrgpmQ"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.1/@node.4"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHKgDWRAEe6K0p45ZrgpmQ"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_bHKgD2RAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+          <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.1/@inNode"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHKgEGRAEe6K0p45ZrgpmQ" x="-1" y="-11"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_bHKgEWRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+          <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.1/@outNode"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHKgEmRAEe6K0p45ZrgpmQ"/>
+        </children>
+        <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@node.1"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHG1pGRAEe6K0p45ZrgpmQ"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_bHG1pmRAEe6K0p45ZrgpmQ" type="3020" fontName=".AppleSystemUIFont">
+        <element xmi:type="datamapper:InNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@inNode"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHG1p2RAEe6K0p45ZrgpmQ" x="-1" y="-11"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_bHG1qGRAEe6K0p45ZrgpmQ" type="3019" fontName=".AppleSystemUIFont">
+        <element xmi:type="datamapper:OutNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0/@outNode"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHG1qWRAEe6K0p45ZrgpmQ"/>
+      </children>
+      <element xmi:type="datamapper:TreeNode" href="FinancialGatewayConfig.datamapper#//@output/@treeNode.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bHEZYWRAEe6K0p45ZrgpmQ"/>
+    </children>
+    <element xmi:type="datamapper:Output" href="FinancialGatewayConfig.datamapper#//@output"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_IPaW4WRAEe6K0p45ZrgpmQ" x="600" y="312" width="401" height="200"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_II3C8WRAEe6K0p45ZrgpmQ"/>
+  <element xmi:type="datamapper:DataMapperRoot" href="FinancialGatewayConfig.datamapper#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_b_CjMGRAEe6K0p45ZrgpmQ" type="4001" source="_ZQ5h_GRAEe6K0p45ZrgpmQ" target="_bHIDwGRAEe6K0p45ZrgpmQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_b_CjMWRAEe6K0p45ZrgpmQ" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="datamapper:DataMapperLink" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.1/@node.0/@outNode/@outgoingLink.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_b_CjMmRAEe6K0p45ZrgpmQ" points="[-2, 0, -101, 125]$[97, -125, -2, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_b_HbsGRAEe6K0p45ZrgpmQ" id="CENTER"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_b_HbsWRAEe6K0p45ZrgpmQ" id="CENTER"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_co1uIGRAEe6K0p45ZrgpmQ" type="4001" source="_ZQ6wEGRAEe6K0p45ZrgpmQ" target="_bHJR4GRAEe6K0p45ZrgpmQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_co1uIWRAEe6K0p45ZrgpmQ" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="datamapper:DataMapperLink" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.1/@node.1/@outNode/@outgoingLink.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_co1uImRAEe6K0p45ZrgpmQ" points="[-2, 0, -101, 15]$[97, -15, -2, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_co2VMGRAEe6K0p45ZrgpmQ" id="CENTER"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_co2VMWRAEe6K0p45ZrgpmQ" id="CENTER"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_c8m-sGRAEe6K0p45ZrgpmQ" type="4001" source="_ZQ7-MmRAEe6K0p45ZrgpmQ" target="_bHKgE2RAEe6K0p45ZrgpmQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_c8nlwGRAEe6K0p45ZrgpmQ" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="datamapper:DataMapperLink" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.0/@outNode/@outgoingLink.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_c8nlwWRAEe6K0p45ZrgpmQ" points="[-2, 0, -101, 19]$[97, -19, -2, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c8oz4GRAEe6K0p45ZrgpmQ" id="CENTER"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_c8oz4WRAEe6K0p45ZrgpmQ" id="CENTER"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_dhLrYGRAEe6K0p45ZrgpmQ" type="4001" source="_ZQ9MUGRAEe6K0p45ZrgpmQ" target="_bHLHEGRAEe6K0p45ZrgpmQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_dhLrYWRAEe6K0p45ZrgpmQ" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="datamapper:DataMapperLink" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.1/@outNode/@outgoingLink.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dhLrYmRAEe6K0p45ZrgpmQ" points="[-2, 0, -101, 21]$[97, -21, -2, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dhMScGRAEe6K0p45ZrgpmQ" id="CENTER"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dhMScWRAEe6K0p45ZrgpmQ" id="CENTER"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_dxMdUGRAEe6K0p45ZrgpmQ" type="4001" source="_ZQ9zYmRAEe6K0p45ZrgpmQ" target="_bHLuIGRAEe6K0p45ZrgpmQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_dxMdUWRAEe6K0p45ZrgpmQ" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="datamapper:DataMapperLink" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.2/@outNode/@outgoingLink.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dxMdUmRAEe6K0p45ZrgpmQ" points="[-2, 0, -101, 23]$[97, -23, -2, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dxNrcGRAEe6K0p45ZrgpmQ" id="CENTER"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dxNrcWRAEe6K0p45ZrgpmQ" id="CENTER"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_eF3FwGRAEe6K0p45ZrgpmQ" type="4001" source="_ZQ-acmRAEe6K0p45ZrgpmQ" target="_bHMVMGRAEe6K0p45ZrgpmQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_eF3FwWRAEe6K0p45ZrgpmQ" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="datamapper:DataMapperLink" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.3/@outNode/@outgoingLink.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eF3FwmRAEe6K0p45ZrgpmQ" points="[-2, 0, -101, 24]$[97, -24, -2, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eF4T4GRAEe6K0p45ZrgpmQ" id="CENTER"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eF4T4WRAEe6K0p45ZrgpmQ" id="CENTER"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_eXqncGRAEe6K0p45ZrgpmQ" type="4001" source="_ZQ_BgmRAEe6K0p45ZrgpmQ" target="_bHM8QGRAEe6K0p45ZrgpmQ">
+    <styles xmi:type="notation:FontStyle" xmi:id="_eXqncWRAEe6K0p45ZrgpmQ" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="datamapper:DataMapperLink" href="FinancialGatewayConfig.datamapper#//@input/@treeNode.0/@node.2/@node.4/@outNode/@outgoingLink.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_eXqncmRAEe6K0p45ZrgpmQ" points="[-2, 0, -101, 26]$[97, -26, -2, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eXrOgGRAEe6K0p45ZrgpmQ" id="CENTER"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_eXrOgWRAEe6K0p45ZrgpmQ" id="CENTER"/>
+  </edges>
+</notation:Diagram>

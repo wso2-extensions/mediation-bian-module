@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="CurrentAccountSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <property expression="json-eval($.CurrentaccountId)" name="uri.var.currentaccountid" scope="default" type="STRING"/>
+    <call>
+        <endpoint key="PaymentBackendCurrentAccount"/>
+    </call>
+</sequence>

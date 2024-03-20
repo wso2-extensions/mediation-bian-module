@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/ACHOperationsBackend" name="ACHOperationsBackend" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" uri-template="/ACHOperations/{achoperationsid}/OutboundACH/{outboundachid}/Initiate">
+        <inSequence>
+            <log level="full"/>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.achoperationsid')" name="achoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.outboundachid')" name="outboundachid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <datamapper config="gov:datamapper/ACHOperationsConfig.dmc" inputSchema="gov:datamapper/ACHOperationsConfig_inputSchema.json" inputType="JSON" outputSchema="gov:datamapper/ACHOperationsConfig_outputSchema.json" outputType="JSON" xsltStyleSheet="gov:datamapper/ACHOperationsConfig_xsltStyleSheet.xml"/>
+            <payloadFactory media-type="json">
+                <format>{
+							  "InboundACH": {
+							    "ACHPaymentTransactionReference": "string",
+							    "ACHPaymentTransactionRecord": "string",
+							    "PaymentTransactionInitiatorReference": "string",
+							    "PayerReference": "string",
+							    "PayerBankReference": "string",
+							    "PayerProductInstanceReference": "string",
+							    "PayeeReference": "string",
+							    "PayeeProductInstanceReference": "string",
+							    "PayeeBankReference": "string",
+							    "SpecialInstructions": "string",
+							    "Amount": "string",
+							    "Currency": "string",
+							    "DateType": "string"
+							  }
+							}
+					</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

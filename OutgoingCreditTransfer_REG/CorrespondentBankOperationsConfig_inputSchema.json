@@ -1,0 +1,67 @@
+{
+  "$schema" : "http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#",
+  "inputType" : "JSON",
+  "id" : "http://wso2jsonschema.org",
+  "title" : "root",
+  "type" : "object",
+  "properties" : {
+    "OutboundPayments" : {
+      "id" : "http://wso2jsonschema.org/OutboundPayments",
+      "type" : "object",
+      "properties" : {
+        "CorrespondentTransactionRecord" : {
+          "id" : "http://wso2jsonschema.org/OutboundPayments/CorrespondentTransactionRecord",
+          "type" : "string"
+        },
+        "SWIFTTransactionReference" : {
+          "id" : "http://wso2jsonschema.org/OutboundPayments/SWIFTTransactionReference",
+          "type" : "string"
+        },
+        "PayerBankReference" : {
+          "id" : "http://wso2jsonschema.org/OutboundPayments/PayerBankReference",
+          "type" : "string"
+        },
+        "PayerReference" : {
+          "id" : "http://wso2jsonschema.org/OutboundPayments/PayerReference",
+          "type" : "string"
+        },
+        "CorrespondedBankReference" : {
+          "id" : "http://wso2jsonschema.org/OutboundPayments/CorrespondedBankReference",
+          "type" : "string"
+        },
+        "PayerProductInstanceReference" : {
+          "id" : "http://wso2jsonschema.org/OutboundPayments/PayerProductInstanceReference",
+          "type" : "string"
+        },
+        "PayeeReference" : {
+          "id" : "http://wso2jsonschema.org/OutboundPayments/PayeeReference",
+          "type" : "string"
+        },
+        "PayeeProductInstanceReference" : {
+          "id" : "http://wso2jsonschema.org/OutboundPayments/PayeeProductInstanceReference",
+          "type" : "string"
+        },
+        "PayeeBankReference" : {
+          "id" : "http://wso2jsonschema.org/OutboundPayments/PayeeBankReference",
+          "type" : "string"
+        },
+        "SpecialInstructions" : {
+          "id" : "http://wso2jsonschema.org/OutboundPayments/SpecialInstructions",
+          "type" : "string"
+        },
+        "Amount" : {
+          "id" : "http://wso2jsonschema.org/OutboundPayments/Amount",
+          "type" : "string"
+        },
+        "Currency" : {
+          "id" : "http://wso2jsonschema.org/OutboundPayments/Currency",
+          "type" : "string"
+        },
+        "DateType" : {
+          "id" : "http://wso2jsonschema.org/OutboundPayments/DateType",
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

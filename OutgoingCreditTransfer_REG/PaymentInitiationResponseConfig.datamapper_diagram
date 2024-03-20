@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:datamapper="http:///org/wso2/developerstudio/eclipse/gmf/datamapper" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_s4onkEMEEe60NJGzzeO7UA" type="DataMapper" name="PaymentInitiationResponseConfig.datamapper_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_s6trMEMEEe60NJGzzeO7UA" type="2002" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:Shape" xmi:id="_lMy7YG2EEe6WbcMFuzDPxg" type="3002" fontName=".AppleSystemUIFont">
+      <children xmi:type="notation:DecorationNode" xmi:id="_lMy7Ym2EEe6WbcMFuzDPxg" type="5002"/>
+      <children xmi:type="notation:Shape" xmi:id="_lM0JgG2EEe6WbcMFuzDPxg" type="3003" fontName=".AppleSystemUIFont">
+        <children xmi:type="notation:DecorationNode" xmi:id="_lM0Jgm2EEe6WbcMFuzDPxg" type="5001"/>
+        <children xmi:type="notation:Shape" xmi:id="_lM0wkG2EEe6WbcMFuzDPxg" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_lM0wkm2EEe6WbcMFuzDPxg" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_lM1Xq22EEe6WbcMFuzDPxg" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.0/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM1XrG2EEe6WbcMFuzDPxg" x="-1" y="1"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_lM1XrW2EEe6WbcMFuzDPxg" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.0/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM1Xrm2EEe6WbcMFuzDPxg"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM0wkW2EEe6WbcMFuzDPxg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_lM0wk22EEe6WbcMFuzDPxg" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_lM0wlW2EEe6WbcMFuzDPxg" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_lM2lwG2EEe6WbcMFuzDPxg" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.1/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM2lwW2EEe6WbcMFuzDPxg" x="-1" y="1"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_lM2lwm2EEe6WbcMFuzDPxg" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.1/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM2lw22EEe6WbcMFuzDPxg"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.1"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM0wlG2EEe6WbcMFuzDPxg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_lM0wlm2EEe6WbcMFuzDPxg" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_lM0wmG2EEe6WbcMFuzDPxg" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_lM2lxG2EEe6WbcMFuzDPxg" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.2/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM2lxW2EEe6WbcMFuzDPxg" x="-1" y="1"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_lM2lxm2EEe6WbcMFuzDPxg" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.2/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM2lx22EEe6WbcMFuzDPxg"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.2"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM0wl22EEe6WbcMFuzDPxg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_lM0wmW2EEe6WbcMFuzDPxg" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_lM1XoG2EEe6WbcMFuzDPxg" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_lM3M0G2EEe6WbcMFuzDPxg" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.3/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM3M0W2EEe6WbcMFuzDPxg" x="-1" y="1"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_lM3M0m2EEe6WbcMFuzDPxg" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.3/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM3M022EEe6WbcMFuzDPxg"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.3"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM0wmm2EEe6WbcMFuzDPxg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_lM1XoW2EEe6WbcMFuzDPxg" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_lM1Xo22EEe6WbcMFuzDPxg" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_lM3z4G2EEe6WbcMFuzDPxg" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.4/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM3z4W2EEe6WbcMFuzDPxg" x="-1" y="1"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_lM3z4m2EEe6WbcMFuzDPxg" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.4/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM3z422EEe6WbcMFuzDPxg"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.4"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM1Xom2EEe6WbcMFuzDPxg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_lM1XpG2EEe6WbcMFuzDPxg" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_lM1Xpm2EEe6WbcMFuzDPxg" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_lM4a8G2EEe6WbcMFuzDPxg" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.5/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM4a8W2EEe6WbcMFuzDPxg" x="-1" y="1"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_lM4a8m2EEe6WbcMFuzDPxg" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.5/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM4a822EEe6WbcMFuzDPxg"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.5"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM1XpW2EEe6WbcMFuzDPxg"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_lM1Xp22EEe6WbcMFuzDPxg" type="3020" fontName=".AppleSystemUIFont">
+          <element xmi:type="datamapper:InNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@inNode"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM1XqG2EEe6WbcMFuzDPxg" x="-1" y="-11"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_lM1XqW2EEe6WbcMFuzDPxg" type="3019" fontName=".AppleSystemUIFont">
+          <element xmi:type="datamapper:OutNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@outNode"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM1Xqm2EEe6WbcMFuzDPxg"/>
+        </children>
+        <element xmi:type="datamapper:TreeNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM0JgW2EEe6WbcMFuzDPxg"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_lM0Jhm2EEe6WbcMFuzDPxg" type="3020" fontName=".AppleSystemUIFont">
+        <element xmi:type="datamapper:InNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@inNode"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM0Jh22EEe6WbcMFuzDPxg" x="-1" y="-11"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_lM0JiG2EEe6WbcMFuzDPxg" type="3019" fontName=".AppleSystemUIFont">
+        <element xmi:type="datamapper:OutNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@outNode"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lM0JiW2EEe6WbcMFuzDPxg"/>
+      </children>
+      <element xmi:type="datamapper:TreeNode" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lMy7YW2EEe6WbcMFuzDPxg"/>
+    </children>
+    <element xmi:type="datamapper:Input" href="PaymentInitiationResponseConfig.datamapper#//@input"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s6trMUMEEe60NJGzzeO7UA" x="92" y="192" width="393" height="200"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_s6trMkMEEe60NJGzzeO7UA" type="2003" fontName=".AppleSystemUIFont">
+    <children xmi:type="notation:Shape" xmi:id="_XuZF0GGtEe6y88lyO1Dbew" type="3011" fontName=".AppleSystemUIFont">
+      <children xmi:type="notation:DecorationNode" xmi:id="_XuZF0mGtEe6y88lyO1Dbew" type="5003"/>
+      <children xmi:type="notation:Shape" xmi:id="_XuaT8GGtEe6y88lyO1Dbew" type="3003" fontName=".AppleSystemUIFont">
+        <children xmi:type="notation:DecorationNode" xmi:id="_XuaT8mGtEe6y88lyO1Dbew" type="5001"/>
+        <children xmi:type="notation:Shape" xmi:id="_Xua7BGGtEe6y88lyO1Dbew" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_Xua7BmGtEe6y88lyO1Dbew" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_XubiEGGtEe6y88lyO1Dbew" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@node.0/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XubiEWGtEe6y88lyO1Dbew" x="-10" y="4"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_XubiEmGtEe6y88lyO1Dbew" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@node.0/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XubiE2GtEe6y88lyO1Dbew"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@node.0"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xua7BWGtEe6y88lyO1Dbew"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Xua7B2GtEe6y88lyO1Dbew" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_Xua7CWGtEe6y88lyO1Dbew" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_XucJIGGtEe6y88lyO1Dbew" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@node.1/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XucJIWGtEe6y88lyO1Dbew" x="-10" y="4"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_XucJImGtEe6y88lyO1Dbew" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@node.1/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XucJI2GtEe6y88lyO1Dbew"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@node.1"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xua7CGGtEe6y88lyO1Dbew"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Xua7CmGtEe6y88lyO1Dbew" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_Xua7DGGtEe6y88lyO1Dbew" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_XudXQGGtEe6y88lyO1Dbew" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@node.2/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XudXQWGtEe6y88lyO1Dbew" x="-10" y="4"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_XudXQmGtEe6y88lyO1Dbew" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@node.2/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XudXQ2GtEe6y88lyO1Dbew"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@node.2"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xua7C2GtEe6y88lyO1Dbew"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Xua7DWGtEe6y88lyO1Dbew" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_Xua7D2GtEe6y88lyO1Dbew" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_Xud-UGGtEe6y88lyO1Dbew" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@node.3/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xud-UWGtEe6y88lyO1Dbew" x="-10" y="4"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_Xud-UmGtEe6y88lyO1Dbew" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@node.3/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xud-U2GtEe6y88lyO1Dbew"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@node.3"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xua7DmGtEe6y88lyO1Dbew"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Xua7EGGtEe6y88lyO1Dbew" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_Xua7EmGtEe6y88lyO1Dbew" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_XuelYGGtEe6y88lyO1Dbew" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@node.4/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XuelYWGtEe6y88lyO1Dbew" x="-10" y="4"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_XuelYmGtEe6y88lyO1Dbew" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@node.4/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XuelY2GtEe6y88lyO1Dbew"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@node.4"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xua7EWGtEe6y88lyO1Dbew"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Xua7E2GtEe6y88lyO1Dbew" type="3003" fontName=".AppleSystemUIFont">
+          <children xmi:type="notation:DecorationNode" xmi:id="_Xua7FWGtEe6y88lyO1Dbew" type="5001"/>
+          <children xmi:type="notation:Shape" xmi:id="_XufMcGGtEe6y88lyO1Dbew" type="3020" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:InNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@node.5/@inNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XufMcWGtEe6y88lyO1Dbew" x="-10" y="4"/>
+          </children>
+          <children xmi:type="notation:Shape" xmi:id="_XufMcmGtEe6y88lyO1Dbew" type="3019" fontName=".AppleSystemUIFont">
+            <element xmi:type="datamapper:OutNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@node.5/@outNode"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XufMc2GtEe6y88lyO1Dbew"/>
+          </children>
+          <element xmi:type="datamapper:TreeNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@node.5"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xua7FGGtEe6y88lyO1Dbew"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Xua7FmGtEe6y88lyO1Dbew" type="3020" fontName=".AppleSystemUIFont">
+          <element xmi:type="datamapper:InNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@inNode"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xua7F2GtEe6y88lyO1Dbew" x="-1" y="-11"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_Xua7GGGtEe6y88lyO1Dbew" type="3019" fontName=".AppleSystemUIFont">
+          <element xmi:type="datamapper:OutNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0/@outNode"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xua7GWGtEe6y88lyO1Dbew"/>
+        </children>
+        <element xmi:type="datamapper:TreeNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@node.0"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XuaT8WGtEe6y88lyO1Dbew"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Xua7AGGtEe6y88lyO1Dbew" type="3020" fontName=".AppleSystemUIFont">
+        <element xmi:type="datamapper:InNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@inNode"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xua7AWGtEe6y88lyO1Dbew" x="-1" y="-11"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_Xua7AmGtEe6y88lyO1Dbew" type="3019" fontName=".AppleSystemUIFont">
+        <element xmi:type="datamapper:OutNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0/@outNode"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Xua7A2GtEe6y88lyO1Dbew"/>
+      </children>
+      <element xmi:type="datamapper:TreeNode" href="PaymentInitiationResponseConfig.datamapper#//@output/@treeNode.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_XuZF0WGtEe6y88lyO1Dbew"/>
+    </children>
+    <element xmi:type="datamapper:Output" href="PaymentInitiationResponseConfig.datamapper#//@output"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_s6trM0MEEe60NJGzzeO7UA" x="560" y="204" width="393" height="160"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_s4onkUMEEe60NJGzzeO7UA"/>
+  <element xmi:type="datamapper:DataMapperRoot" href="PaymentInitiationResponseConfig.datamapper#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_l0o-gG2EEe6WbcMFuzDPxg" type="4001" source="_lM1XrW2EEe6WbcMFuzDPxg" target="_XubiEGGtEe6y88lyO1Dbew">
+    <styles xmi:type="notation:FontStyle" xmi:id="_l0o-gW2EEe6WbcMFuzDPxg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="datamapper:DataMapperLink" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.0/@outNode/@outgoingLink.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_l0o-gm2EEe6WbcMFuzDPxg" points="[-2, 0, -77, 0]$[73, 0, -2, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_l0qMoG2EEe6WbcMFuzDPxg" id="CENTER"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_l0qMoW2EEe6WbcMFuzDPxg" id="CENTER"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_mJYfcG2EEe6WbcMFuzDPxg" type="4001" source="_lM2lwm2EEe6WbcMFuzDPxg" target="_XucJIGGtEe6y88lyO1Dbew">
+    <styles xmi:type="notation:FontStyle" xmi:id="_mJYfcW2EEe6WbcMFuzDPxg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="datamapper:DataMapperLink" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.1/@outNode/@outgoingLink.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mJYfcm2EEe6WbcMFuzDPxg" points="[-2, 0, -77, 3]$[73, -3, -2, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mJZGgG2EEe6WbcMFuzDPxg" id="CENTER"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mJZGgW2EEe6WbcMFuzDPxg" id="CENTER"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_mj7GYG2EEe6WbcMFuzDPxg" type="4001" source="_lM2lxm2EEe6WbcMFuzDPxg" target="_XudXQGGtEe6y88lyO1Dbew">
+    <styles xmi:type="notation:FontStyle" xmi:id="_mj7tcG2EEe6WbcMFuzDPxg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="datamapper:DataMapperLink" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.2/@outNode/@outgoingLink.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mj7tcW2EEe6WbcMFuzDPxg" points="[-2, 0, -77, 5]$[73, -5, -2, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mj7tcm2EEe6WbcMFuzDPxg" id="CENTER"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_mj7tc22EEe6WbcMFuzDPxg" id="CENTER"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_m3FS8G2EEe6WbcMFuzDPxg" type="4001" source="_lM3M0m2EEe6WbcMFuzDPxg" target="_Xud-UGGtEe6y88lyO1Dbew">
+    <styles xmi:type="notation:FontStyle" xmi:id="_m3FS8W2EEe6WbcMFuzDPxg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="datamapper:DataMapperLink" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.3/@outNode/@outgoingLink.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_m3FS8m2EEe6WbcMFuzDPxg" points="[-2, 0, -77, 7]$[73, -7, -2, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_m3FS822EEe6WbcMFuzDPxg" id="CENTER"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_m3FS9G2EEe6WbcMFuzDPxg" id="CENTER"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_nVwL8G2EEe6WbcMFuzDPxg" type="4001" source="_lM3z4m2EEe6WbcMFuzDPxg" target="_XuelYGGtEe6y88lyO1Dbew">
+    <styles xmi:type="notation:FontStyle" xmi:id="_nVwL8W2EEe6WbcMFuzDPxg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="datamapper:DataMapperLink" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.4/@outNode/@outgoingLink.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nVwL8m2EEe6WbcMFuzDPxg" points="[-2, 0, -77, 9]$[73, -9, -2, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nVwzAG2EEe6WbcMFuzDPxg" id="CENTER"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nVwzAW2EEe6WbcMFuzDPxg" id="CENTER"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_ntnSUG2EEe6WbcMFuzDPxg" type="4001" source="_lM4a8m2EEe6WbcMFuzDPxg" target="_XufMcGGtEe6y88lyO1Dbew">
+    <styles xmi:type="notation:FontStyle" xmi:id="_ntnSUW2EEe6WbcMFuzDPxg" fontName=".AppleSystemUIFont"/>
+    <element xmi:type="datamapper:DataMapperLink" href="PaymentInitiationResponseConfig.datamapper#//@input/@treeNode.0/@node.0/@node.5/@outNode/@outgoingLink.0"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_ntnSUm2EEe6WbcMFuzDPxg" points="[-2, 0, -77, 11]$[73, -11, -2, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ntogcG2EEe6WbcMFuzDPxg" id="CENTER"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ntogcW2EEe6WbcMFuzDPxg" id="CENTER"/>
+  </edges>
+</notation:Diagram>

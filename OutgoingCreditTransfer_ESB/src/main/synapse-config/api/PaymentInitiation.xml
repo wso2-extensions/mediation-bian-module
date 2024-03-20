@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/BIAN-3/BIAN/PaymentInitiation" name="PaymentInitiation" version="11.0.0" version-type="url" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" url-mapping="/PaymentInitiation/Initiate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <!--Business Logic Goes Here-->
+            <!--  <property name="messageType" scope="axis2" type="STRING" value="application/json"/> -->
+            <log/>
+            <sequence key="PaymentInitiationSequence"/>
+            <respond/>
+        </inSequence>
+        <outSequence>
+            <log level="custom">
+                <property expression="json-eval($)" name="SOAP Body"/>
+            </log>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/PaymentInitiation/{paymentinitiationid}/Update">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.paymentinitiationid')" name="paymentinitiationid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/PaymentInitiation/{paymentinitiationid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.paymentinitiationid')" name="paymentinitiationid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/PaymentInitiation/{paymentinitiationid}/Compliance/{complianceid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.paymentinitiationid')" name="paymentinitiationid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.complianceid')" name="complianceid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/PaymentInitiation/{paymentinitiationid}/FundingCheck/{fundingcheckid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.paymentinitiationid')" name="paymentinitiationid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.fundingcheckid')" name="fundingcheckid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/PaymentInitiation/{paymentinitiationid}/OrderInitiation/{orderinitiationid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.paymentinitiationid')" name="paymentinitiationid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.orderinitiationid')" name="orderinitiationid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

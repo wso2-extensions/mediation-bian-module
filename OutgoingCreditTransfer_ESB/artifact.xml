@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="PaymentOrder_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PaymentOrder_swagger.yaml</file>
+    </artifact>
+    <artifact name="PaymentOrder_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PaymentOrder_metadata.yaml</file>
+    </artifact>
+    <artifact name="PymentBackendPaymentInitiation" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PymentBackendPaymentInitiation.xml</file>
+    </artifact>
+    <artifact name="PaymentRequestMessageStore" groupId="com.example.message-store" version="1.0.0" type="synapse/message-store" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/message-stores/PaymentRequestMessageStore.xml</file>
+    </artifact>
+    <artifact name="PaymentOrderSequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/PaymentOrderSequence.xml</file>
+    </artifact>
+    <artifact name="PaymentInitiation_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PaymentInitiation_swagger.yaml</file>
+    </artifact>
+    <artifact name="PaymentInitiation_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PaymentInitiation_metadata.yaml</file>
+    </artifact>
+    <artifact name="Test" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/Test.xml</file>
+    </artifact>
+    <artifact name="Test_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/Test_swagger.yaml</file>
+    </artifact>
+    <artifact name="Test_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/Test_metadata.yaml</file>
+    </artifact>
+    <artifact name="PaymentBackend_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PaymentBackend_swagger.yaml</file>
+    </artifact>
+    <artifact name="PaymentBackend_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PaymentBackend_metadata.yaml</file>
+    </artifact>
+    <artifact name="PaymentBackend_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PaymentBackend_swagger.yaml</file>
+    </artifact>
+    <artifact name="PaymentBackend_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PaymentBackend_metadata.yaml</file>
+    </artifact>
+    <artifact name="PaymentBackend" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/PaymentBackend.xml</file>
+    </artifact>
+    <artifact name="PaymentBackend_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PaymentBackend_swagger.yaml</file>
+    </artifact>
+    <artifact name="PaymentBackend_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PaymentBackend_metadata.yaml</file>
+    </artifact>
+    <artifact name="PaymentInitiation" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/PaymentInitiation.xml</file>
+    </artifact>
+    <artifact name="PaymentInitiation_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PaymentInitiation_swagger.yaml</file>
+    </artifact>
+    <artifact name="PaymentInitiation_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PaymentInitiation_metadata.yaml</file>
+    </artifact>
+    <artifact name="PaymentOrder" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/PaymentOrder.xml</file>
+    </artifact>
+    <artifact name="PaymentOrder_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PaymentOrder_swagger.yaml</file>
+    </artifact>
+    <artifact name="PaymentOrder_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PaymentOrder_metadata.yaml</file>
+    </artifact>
+    <artifact name="PaymentTemplate" groupId="com.example.template" version="1.0.0" type="synapse/sequenceTemplate" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/templates/PaymentTemplate.xml</file>
+    </artifact>
+    <artifact name="PaymentBackendPaymentOrder" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PaymentBackendPaymentOrder.xml</file>
+    </artifact>
+    <artifact name="CurrentAccount" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/CurrentAccount.xml</file>
+    </artifact>
+    <artifact name="CurrentAccount_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/CurrentAccount_swagger.yaml</file>
+    </artifact>
+    <artifact name="CurrentAccount_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/CurrentAccount_metadata.yaml</file>
+    </artifact>
+    <artifact name="CurrentAccountSequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/CurrentAccountSequence.xml</file>
+    </artifact>
+    <artifact name="PaymentInitiationSequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/PaymentInitiationSequence.xml</file>
+    </artifact>
+    <artifact name="PaymentBackendCurrentAccount" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PaymentBackendCurrentAccount.xml</file>
+    </artifact>
+    <artifact name="RegulatoryComplianceSequence" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/RegulatoryComplianceSequence.xml</file>
+    </artifact>
+    <artifact name="RegulatoryComplianceSequence" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/RegulatoryComplianceSequence.xml</file>
+    </artifact>
+    <artifact name="RegulatoryCompliance_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/RegulatoryCompliance_swagger.yaml</file>
+    </artifact>
+    <artifact name="RegulatoryCompliance_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/RegulatoryCompliance_metadata.yaml</file>
+    </artifact>
+    <artifact name="RegulatoryComplianceBackend" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/RegulatoryComplianceBackend.xml</file>
+    </artifact>
+    <artifact name="RegulatoryComplianceBackend_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/RegulatoryComplianceBackend_swagger.yaml</file>
+    </artifact>
+    <artifact name="RegulatoryComplianceBackend_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/RegulatoryComplianceBackend_metadata.yaml</file>
+    </artifact>
+    <artifact name="RegulatoryComplianceSequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/RegulatoryComplianceSequence.xml</file>
+    </artifact>
+    <artifact name="RegulatoryCompliance" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/RegulatoryCompliance.xml</file>
+    </artifact>
+    <artifact name="RegulatoryCompliance_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/RegulatoryCompliance_swagger.yaml</file>
+    </artifact>
+    <artifact name="RegulatoryCompliance_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/RegulatoryCompliance_metadata.yaml</file>
+    </artifact>
+    <artifact name="RegulatoryComplianceEndpoint" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/RegulatoryComplianceEndpoint.xml</file>
+    </artifact>
+    <artifact name="RegulatoryCompliance" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/RegulatoryCompliance.xml</file>
+    </artifact>
+    <artifact name="RegulatoryCompliance_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/RegulatoryCompliance_swagger.yaml</file>
+    </artifact>
+    <artifact name="RegulatoryCompliance_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/RegulatoryCompliance_metadata.yaml</file>
+    </artifact>
+    <artifact name="PaymentExecution" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/PaymentExecution.xml</file>
+    </artifact>
+    <artifact name="PaymentExecution_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PaymentExecution_swagger.yaml</file>
+    </artifact>
+    <artifact name="PaymentExecution_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PaymentExecution_metadata.yaml</file>
+    </artifact>
+    <artifact name="PaymentExecutionSequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/PaymentExecutionSequence.xml</file>
+    </artifact>
+    <artifact name="PaymentBackendPaymentExecutionProcedure" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PaymentBackendPaymentExecutionProcedure.xml</file>
+    </artifact>
+    <artifact name="PaymentBackendPaymentExecutionDetails" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PaymentBackendPaymentExecutionDetails.xml</file>
+    </artifact>
+    <artifact name="PositionKeeping" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/PositionKeeping.xml</file>
+    </artifact>
+    <artifact name="PositionKeeping_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PositionKeeping_swagger.yaml</file>
+    </artifact>
+    <artifact name="PositionKeeping_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/PositionKeeping_metadata.yaml</file>
+    </artifact>
+    <artifact name="PositionKeepingSequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/PositionKeepingSequence.xml</file>
+    </artifact>
+    <artifact name="PaymentBackendPositionKeeping" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PaymentBackendPositionKeeping.xml</file>
+    </artifact>
+    <artifact name="InternalBankAccountSequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/InternalBankAccountSequence.xml</file>
+    </artifact>
+    <artifact name="InternalBankAccount" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/InternalBankAccount.xml</file>
+    </artifact>
+    <artifact name="InternalBankAccount_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/InternalBankAccount_swagger.yaml</file>
+    </artifact>
+    <artifact name="InternalBankAccount_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/InternalBankAccount_metadata.yaml</file>
+    </artifact>
+    <artifact name="PaymentBackendInternalBankAccount" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PaymentBackendInternalBankAccount.xml</file>
+    </artifact>
+    <artifact name="ACHOperations" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/ACHOperations.xml</file>
+    </artifact>
+    <artifact name="ACHOperations_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/ACHOperations_swagger.yaml</file>
+    </artifact>
+    <artifact name="ACHOperations_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/ACHOperations_metadata.yaml</file>
+    </artifact>
+    <artifact name="CorrespondentBankOperations" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/CorrespondentBankOperations.xml</file>
+    </artifact>
+    <artifact name="CorrespondentBankOperations_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/CorrespondentBankOperations_swagger.yaml</file>
+    </artifact>
+    <artifact name="CorrespondentBankOperations_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/CorrespondentBankOperations_metadata.yaml</file>
+    </artifact>
+    <artifact name="FinancialGateway" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/FinancialGateway.xml</file>
+    </artifact>
+    <artifact name="FinancialGateway_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/FinancialGateway_swagger.yaml</file>
+    </artifact>
+    <artifact name="FinancialGateway_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/FinancialGateway_metadata.yaml</file>
+    </artifact>
+    <artifact name="ACHOperationsSequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/ACHOperationsSequence.xml</file>
+    </artifact>
+    <artifact name="ACHOperationsEndpoint" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/ACHOperationsEndpoint.xml</file>
+    </artifact>
+    <artifact name="ACHOperationsBackend" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/ACHOperationsBackend.xml</file>
+    </artifact>
+    <artifact name="ACHOperationsBackend_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/ACHOperationsBackend_swagger.yaml</file>
+    </artifact>
+    <artifact name="ACHOperationsBackend_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/ACHOperationsBackend_metadata.yaml</file>
+    </artifact>
+    <artifact name="PaymentBackendCorrespondentBankOperations" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PaymentBackendCorrespondentBankOperations.xml</file>
+    </artifact>
+    <artifact name="CorrespondentBankOperationsSequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/CorrespondentBankOperationsSequence.xml</file>
+    </artifact>
+    <artifact name="FinancialGatewayENDPOINT" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/FinancialGatewayENDPOINT.xml</file>
+    </artifact>
+    <artifact name="FinancialGatewaySequence" groupId="com.example.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/FinancialGatewaySequence.xml</file>
+    </artifact>
+    <artifact name="FinancialGatewayEndpoint" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/FinancialGatewayEndpoint.xml</file>
+    </artifact>
+    <artifact name="FinancialGatewayENDPOINT" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/FinancialGatewayENDPOINT.xml</file>
+    </artifact>
+    <artifact name="FinancialGatewayENDPOINT" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/FinancialGatewayENDPOINT.xml</file>
+    </artifact>
+    <artifact name="FinancialGatewayBackend" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/FinancialGatewayBackend.xml</file>
+    </artifact>
+    <artifact name="FinancialGatewayBackend_swagger" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/FinancialGatewayBackend_swagger.yaml</file>
+    </artifact>
+    <artifact name="FinancialGatewayBackend_metadata" groupId="com.example.metadata" version="1.0.0" type="synapse/metadata" serverRole="EnterpriseServiceBus">
+        <file>src/main/resources/metadata/FinancialGatewayBackend_metadata.yaml</file>
+    </artifact>
+    <artifact name="PaymentBackendPaymentOrderDetails" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PaymentBackendPaymentOrderDetails.xml</file>
+    </artifact>
+    <artifact name="PaymentBackendPositionKeepingDetails" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PaymentBackendPositionKeepingDetails.xml</file>
+    </artifact>
+    <artifact name="PaymentBackendInternalBankAccountDetails" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PaymentBackendInternalBankAccountDetails.xml</file>
+    </artifact>
+    <artifact name="PaymentBackendACHOperationsDetails" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PaymentBackendACHOperationsDetails.xml</file>
+    </artifact>
+    <artifact name="PaymentBackendCorrespondentBankOperationsDetails" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PaymentBackendCorrespondentBankOperationsDetails.xml</file>
+    </artifact>
+    <artifact name="PaymentBackendFinancialGatewayDetails" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PaymentBackendFinancialGatewayDetails.xml</file>
+    </artifact>
+    <artifact name="PaymentBackendRegulatoryComplianceDetails" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/PaymentBackendRegulatoryComplianceDetails.xml</file>
+    </artifact>
+</artifacts>

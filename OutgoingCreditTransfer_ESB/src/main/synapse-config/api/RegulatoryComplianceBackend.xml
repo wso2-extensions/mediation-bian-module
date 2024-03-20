@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/RegulatoryCompliance" name="RegulatoryComplianceBackend" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" url-mapping="/RegulatoryCompliance/Evaluate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <!--Business Logic Goes Here-->
+            <log level="full"/>
+            <payloadFactory media-type="json">
+                <format>{
+						  "RegulatoryComplianceAssessment": {
+						    "RegulatoryAssessmentType": "string",
+						    "RegulationDefinition": "string",
+						    "RegulationComplianceandReportingRequirements": "string",
+						    "RegulationAccountability": "string",
+						    "RegulationPenalties": "string",
+						    "RegulationGuideline": "string",
+						    "DocumentReference": "string",
+						    "RegulatoryAssessmentWorkProducts": "string",
+						    "RegulatoryAssessmentResult": "string"
+						  }
+						}
+				</format>
+                <args/>
+            </payloadFactory>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

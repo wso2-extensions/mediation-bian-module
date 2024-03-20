@@ -1,0 +1,87 @@
+{
+  "$schema" : "http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#",
+  "outputType" : "JSON",
+  "id" : "http://wso2jsonschema.org",
+  "title" : "root",
+  "type" : "object",
+  "properties" : {
+    "FinancialPositionLog" : {
+      "id" : "http://wso2jsonschema.org/FinancialPositionLog",
+      "type" : "object",
+      "properties" : {
+        "TransactionLogType" : {
+          "id" : "http://wso2jsonschema.org/FinancialPositionLog/TransactionLogType",
+          "type" : "string"
+        },
+        "ProductInstanceReference" : {
+          "id" : "http://wso2jsonschema.org/FinancialPositionLog/ProductInstanceReference",
+          "type" : "string"
+        },
+        "CustomerReference" : {
+          "id" : "http://wso2jsonschema.org/FinancialPositionLog/CustomerReference",
+          "type" : "string"
+        },
+        "CounterpartyReference" : {
+          "id" : "http://wso2jsonschema.org/FinancialPositionLog/CounterpartyReference",
+          "type" : "string"
+        },
+        "BaseCurrency" : {
+          "id" : "http://wso2jsonschema.org/FinancialPositionLog/BaseCurrency",
+          "type" : "object",
+          "properties" : {
+            "Currencycode" : {
+              "id" : "http://wso2jsonschema.org/FinancialPositionLog/BaseCurrency/Currencycode",
+              "type" : "string"
+            }
+          }
+        },
+        "InterestApplicationRecord" : {
+          "id" : "http://wso2jsonschema.org/FinancialPositionLog/InterestApplicationRecord",
+          "type" : "string"
+        },
+        "ManagedPositionLimits" : {
+          "id" : "http://wso2jsonschema.org/FinancialPositionLog/ManagedPositionLimits",
+          "type" : "string"
+        },
+        "PositionLimitType" : {
+          "id" : "http://wso2jsonschema.org/FinancialPositionLog/PositionLimitType",
+          "type" : "string"
+        },
+        "PositionLimitSettings" : {
+          "id" : "http://wso2jsonschema.org/FinancialPositionLog/PositionLimitSettings",
+          "type" : "string"
+        },
+        "AmountBlock" : {
+          "id" : "http://wso2jsonschema.org/FinancialPositionLog/AmountBlock",
+          "type" : "string"
+        },
+        "AmountBlockType" : {
+          "id" : "http://wso2jsonschema.org/FinancialPositionLog/AmountBlockType",
+          "type" : "string"
+        },
+        "Priority" : {
+          "id" : "http://wso2jsonschema.org/FinancialPositionLog/Priority",
+          "type" : "string"
+        },
+        "DateType" : {
+          "id" : "http://wso2jsonschema.org/FinancialPositionLog/DateType",
+          "type" : "string"
+        },
+        "InitiationDate" : {
+          "id" : "http://wso2jsonschema.org/FinancialPositionLog/InitiationDate",
+          "type" : "object",
+          "properties" : {
+            "DateContent" : {
+              "id" : "http://wso2jsonschema.org/FinancialPositionLog/InitiationDate/DateContent",
+              "type" : "string"
+            }
+          }
+        },
+        "Status" : {
+          "id" : "http://wso2jsonschema.org/FinancialPositionLog/Status",
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

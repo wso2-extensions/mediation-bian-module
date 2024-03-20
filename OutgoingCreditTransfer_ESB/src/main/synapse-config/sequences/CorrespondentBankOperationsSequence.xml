@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="CorrespondentBankOperationsSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <property expression="json-eval($.CorrespondentBankOperationsId)" name="uri.var.correspondentbankoperationsid" scope="default" type="STRING"/>
+    <property expression="json-eval($.OutboundPaymentsId)" name="uri.var.outboundpaymentsid" scope="default" type="STRING"/>
+    <datamapper config="gov:datamapper/CorrespondentBankOperationsConfig.dmc" inputSchema="gov:datamapper/CorrespondentBankOperationsConfig_inputSchema.json" inputType="JSON" outputSchema="gov:datamapper/CorrespondentBankOperationsConfig_outputSchema.json" outputType="JSON" xsltStyleSheet="gov:datamapper/CorrespondentBankOperationsConfig_xsltStyleSheet.xml"/>
+    <call>
+        <endpoint key="PaymentBackendCorrespondentBankOperations"/>
+    </call>
+    <call>
+        <endpoint key="PaymentBackendFinancialGatewayDetails"/>
+    </call>
+    <sequence key="FinancialGatewaySequence"/>
+</sequence>

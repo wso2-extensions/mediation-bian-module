@@ -1,0 +1,873 @@
+openapi: 3.0.1
+info:
+  title: PositionKeeping
+  description: This service domain maintains a financial transaction log to support
+    production. Reconciled financial transactions are subsequently posted to the accounting
+    systems
+  contact:
+    name: BIAN
+    url: https://bian.org
+  version: 11.0.0
+servers:
+- url: https://virtserver.swaggerhub.com/BIAN-3/BIAN/PositionKeeping/11.0.0
+paths:
+  /PositionKeeping/Initiate:
+    post:
+      tags:
+      - CR - FinancialPositionLog
+      summary: InCR Initiate a position keeping transaction log
+      description: InCR Initiate a position keeping transaction log
+      operationId: Initiate
+      requestBody:
+        $ref: '#/components/requestBodies/InitiateFinancialPositionLogRequest'
+      responses:
+        '200':
+          description: InitiateFinancialPositionLogResponse
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/InitiateFinancialPositionLogResponse'
+        '400':
+          description: BadRequest
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '404':
+          description: NotFound
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '429':
+          description: TooManyRequests
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '500':
+          description: InternalServerError
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+  /PositionKeeping/{positionkeepingid}/Update:
+    put:
+      tags:
+      - CR - FinancialPositionLog
+      summary: UpCR Update details for an active financial transaction log, including
+        reflecting an account block
+      description: UpCR Update details for an active financial transaction log, including
+        reflecting an account block
+      operationId: Update
+      parameters:
+      - name: positionkeepingid
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        $ref: '#/components/requestBodies/UpdateFinancialPositionLogRequest'
+      responses:
+        '200':
+          description: UpdateFinancialPositionLogResponse
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UpdateFinancialPositionLogResponse'
+        '400':
+          description: BadRequest
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '404':
+          description: NotFound
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '429':
+          description: TooManyRequests
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '500':
+          description: InternalServerError
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+  /PositionKeeping/{positionkeepingid}/Retrieve:
+    get:
+      tags:
+      - CR - FinancialPositionLog
+      summary: ReCR Retrieve information about the log
+      description: ReCR Retrieve information about the log
+      operationId: Retrieve
+      parameters:
+      - name: positionkeepingid
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: RetrieveFinancialPositionLogResponse
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RetrieveFinancialPositionLogResponse'
+        '400':
+          description: BadRequest
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '404':
+          description: NotFound
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '429':
+          description: TooManyRequests
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '500':
+          description: InternalServerError
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+  /PositionKeeping/{positionkeepingid}/FinancialTransactionCapture/{financialtransactioncaptureid}/Update:
+    put:
+      tags:
+      - BQ - FinancialTransactionCapture
+      summary: UpBQ Update details of a captured financial transaction
+      description: UpBQ Update details of a captured financial transaction
+      operationId: UpdateFinancialTransactionCapture
+      parameters:
+      - name: positionkeepingid
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: financialtransactioncaptureid
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        $ref: '#/components/requestBodies/FinancialTransactionCapture'
+      responses:
+        '200':
+          description: FinancialTransactionCapture
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FinancialTransactionCapture'
+        '400':
+          description: BadRequest
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '404':
+          description: NotFound
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '429':
+          description: TooManyRequests
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '500':
+          description: InternalServerError
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+  /PositionKeeping/{positionkeepingid}/FinancialTransactionCapture/{financialtransactioncaptureid}/Capture:
+    put:
+      tags:
+      - BQ - FinancialTransactionCapture
+      summary: CaBQ Capture details of a financial transaction in the log
+      description: CaBQ Capture details of a financial transaction in the log
+      operationId: CaptureFinancialTransactionCapture
+      parameters:
+      - name: positionkeepingid
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: financialtransactioncaptureid
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        $ref: '#/components/requestBodies/FinancialTransactionCapture'
+      responses:
+        '200':
+          description: FinancialTransactionCapture
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FinancialTransactionCapture'
+        '400':
+          description: BadRequest
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '404':
+          description: NotFound
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '429':
+          description: TooManyRequests
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '500':
+          description: InternalServerError
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+  /PositionKeeping/{positionkeepingid}/FinancialTransactionCapture/{financialtransactioncaptureid}/Retrieve:
+    get:
+      tags:
+      - BQ - FinancialTransactionCapture
+      summary: ReBQ Retrieve details of financial transactions captured in the log
+      description: ReBQ Retrieve details of financial transactions captured in the
+        log
+      operationId: RetrieveFinancialTransactionCapture
+      parameters:
+      - name: positionkeepingid
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: financialtransactioncaptureid
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        '200':
+          description: RetrieveFinancialTransactionCaptureResponse
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RetrieveFinancialTransactionCaptureResponse'
+        '400':
+          description: BadRequest
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '403':
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '404':
+          description: NotFound
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '429':
+          description: TooManyRequests
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+        '500':
+          description: InternalServerError
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPError'
+components:
+  schemas:
+    HTTPError:
+      type: object
+      properties:
+        status_code:
+          type: string
+          format: string
+        status:
+          type: string
+          format: string
+        message:
+          type: string
+          format: string
+      description: Status Attributes
+    date:
+      type: object
+      properties:
+        DateContent:
+          type: string
+          format: string
+      description: The date of the transaction
+    FinancialTransactionCapture:
+      type: object
+      properties:
+        PostingDescription:
+          type: string
+          description: The description of purpose of the financial transaction
+          format: string
+        PostingTransaction:
+          type: string
+          description: The logged financial transaction. Note the log can be structured
+            with double entry representations (i.e. capture credit/debit pair)
+          format: string
+        PostingValueDate:
+          $ref: '#/components/schemas/date'
+      description: |-
+        A collection of the events/transactions recorded by the log
+
+        Examples: Customer life event, Servicing event
+    currencycode:
+      type: object
+      properties:
+        Currencycode:
+          type: string
+          description: |+
+            A code identifying a currency according to ISO-4217.
+            A currency is a system of money in general use in a particular country.
+
+            Code allocated to a currency, by a maintenance agency, under an international identification scheme as described in the latest edition of the international standard ISO 4217 "Codes for the representation of currencies and funds". Valid currency codes are registered with the ISO 4217 Maintenance Agency, and consist of three contiguous letters. (ISO20022)
+
+          format: datatype
+      description: The currency for the logged  transactions
+    FinancialPositionLog:
+      type: object
+      properties:
+        TransactionLogType:
+          type: string
+          description: The type of financial transaction log (e.g. customer transactions)
+          format: string
+        ProductInstanceReference:
+          type: string
+          description: The product/service for which this is a financial transaction
+            log
+          format: object
+        CustomerReference:
+          type: string
+          description: Reference to the product or service account holder/customer
+            for the log if appropriate
+          format: object
+        CounterpartyReference:
+          type: string
+          description: Reference to a counterparty for the log if appropriate (e.g.
+            merchant reference, card network reference)
+          format: object
+        BaseCurrency:
+          $ref: '#/components/schemas/currencycode'
+        InterestApplicationRecord:
+          type: string
+          description: The record of applied interest if interest calculations are
+            supported
+          format: string
+        InterestTransaction:
+          type: string
+          description: A record of applied interest
+          format: string
+        TransactionDescription:
+          type: string
+          description: General description of the interest transaction
+          format: string
+        TransactionRateType:
+          type: string
+          description: Applicable rate type
+          format: string
+        TransactionInterestCharge:
+          type: string
+          description: The derived interest amount to be applied
+          format: string
+        ManagedPositionLimits:
+          type: string
+          description: Basic position limits that are maintained as an aspect of the
+            log
+          format: string
+        PositionLimitType:
+          type: string
+          description: The type of position maintained for the log (e.g. cumulative
+            balance)
+          format: string
+        PositionLimitSettings:
+          type: string
+          description: The position definition, associated limit settings and rules
+          format: string
+        PositionLimitValue:
+          type: string
+          description: The current calculated position
+          format: string
+        AmountBlock:
+          type: string
+          description: Support for recording blocks on the log position (handling
+            is by the associated fulfillment service domain)
+          format: string
+        AmountBlockType:
+          type: string
+          description: The type of block applied to the tracked position (e.g. pending,
+            final)
+          format: string
+        Priority:
+          type: string
+          description: Priority classification for the block
+          format: string
+        Amount:
+          type: string
+          description: The amount of the block
+          format: string
+        DateType:
+          type: string
+          description: The type of key dates associated with the block  (e.g. start,
+            expiry)
+          format: string
+        Date:
+          type: string
+          description: Value of the specific date type
+          format: string
+        InitiationDate:
+          $ref: '#/components/schemas/date'
+        Status:
+          type: string
+          description: The status of the log entry (e.g. active, in-suspense etc.)
+          format: string
+      description: 'Maintain a log of transactions or activity, typically a financial
+        account/journal or a log of activity to support behavioral analysis within
+        Position Keeping. '
+    InitiateFinancialPositionLogRequest:
+      type: object
+      properties:
+        FinancialPositionLog:
+          $ref: '#/components/schemas/InitiateFinancialPositionLogRequest_FinancialPositionLog'
+      description: 'Input: InCR Initiate a position keeping transaction log'
+    InitiateFinancialPositionLogResponse:
+      type: object
+      properties:
+        FinancialPositionLog:
+          $ref: '#/components/schemas/InitiateFinancialPositionLogResponse_FinancialPositionLog'
+      description: 'Output: InCR Initiate a position keeping transaction log'
+    UpdateFinancialPositionLogRequest:
+      type: object
+      properties:
+        FinancialPositionLog:
+          $ref: '#/components/schemas/UpdateFinancialPositionLogRequest_FinancialPositionLog'
+      description: 'Input: UpCR Update details for an active financial transaction
+        log, including reflecting an account block'
+    UpdateFinancialPositionLogResponse:
+      type: object
+      properties:
+        FinancialPositionLog:
+          $ref: '#/components/schemas/UpdateFinancialPositionLogRequest_FinancialPositionLog'
+      description: 'Output: UpCR Update details for an active financial transaction
+        log, including reflecting an account block'
+    RetrieveFinancialPositionLogResponse:
+      type: object
+      properties:
+        FinancialPositionLog:
+          $ref: '#/components/schemas/RetrieveFinancialPositionLogResponse_FinancialPositionLog'
+      description: 'Output: ReCR Retrieve information about the log'
+    RetrieveFinancialTransactionCaptureResponse:
+      type: object
+      properties:
+        FinancialTransactionCapture:
+          $ref: '#/components/schemas/RetrieveFinancialTransactionCaptureResponse_FinancialTransactionCapture'
+      description: 'Output: ReBQ Retrieve details of financial transactions captured
+        in the log'
+    InitiateFinancialPositionLogRequest_FinancialPositionLog:
+      type: object
+      properties:
+        TransactionLogType:
+          type: string
+          format: string
+        ProductInstanceReference:
+          type: string
+          format: object
+        CustomerReference:
+          type: string
+          format: object
+        CounterpartyReference:
+          type: string
+          format: object
+        BaseCurrency:
+          $ref: '#/components/schemas/currencycode'
+        InterestApplicationRecord:
+          type: string
+          format: string
+        ManagedPositionLimits:
+          type: string
+          format: string
+        PositionLimitType:
+          type: string
+          format: string
+        PositionLimitSettings:
+          type: string
+          format: string
+        AmountBlock:
+          type: string
+          format: string
+        AmountBlockType:
+          type: string
+          format: string
+        Priority:
+          type: string
+          format: string
+        DateType:
+          type: string
+          format: string
+        InitiationDate:
+          $ref: '#/components/schemas/date'
+    InitiateFinancialPositionLogResponse_FinancialPositionLog:
+      type: object
+      properties:
+        InterestApplicationRecord:
+          type: string
+          format: string
+        InterestTransaction:
+          type: string
+          format: string
+        TransactionDescription:
+          type: string
+          format: string
+        TransactionRateType:
+          type: string
+          format: string
+        TransactionInterestCharge:
+          type: string
+          format: string
+        ManagedPositionLimits:
+          type: string
+          format: string
+        PositionLimitValue:
+          type: string
+          format: string
+        AmountBlock:
+          type: string
+          format: string
+        DateType:
+          type: string
+          format: string
+        Status:
+          type: string
+          format: string
+    UpdateFinancialPositionLogRequest_FinancialPositionLog:
+      type: object
+      properties:
+        TransactionLogType:
+          type: string
+          format: string
+        ProductInstanceReference:
+          type: string
+          format: object
+        CustomerReference:
+          type: string
+          format: object
+        CounterpartyReference:
+          type: string
+          format: object
+        BaseCurrency:
+          $ref: '#/components/schemas/currencycode'
+        InterestApplicationRecord:
+          type: string
+          format: string
+        ManagedPositionLimits:
+          type: string
+          format: string
+        PositionLimitType:
+          type: string
+          format: string
+        PositionLimitSettings:
+          type: string
+          format: string
+        AmountBlock:
+          type: string
+          format: string
+        AmountBlockType:
+          type: string
+          format: string
+        Priority:
+          type: string
+          format: string
+        DateType:
+          type: string
+          format: string
+        InitiationDate:
+          $ref: '#/components/schemas/date'
+        Status:
+          type: string
+          format: string
+    RetrieveFinancialPositionLogResponse_FinancialPositionLog:
+      type: object
+      properties:
+        TransactionLogType:
+          type: string
+          format: string
+        ProductInstanceReference:
+          type: string
+          format: object
+        CustomerReference:
+          type: string
+          format: object
+        CounterpartyReference:
+          type: string
+          format: object
+        BaseCurrency:
+          $ref: '#/components/schemas/currencycode'
+        InterestApplicationRecord:
+          type: string
+          format: string
+        InterestTransaction:
+          type: string
+          format: string
+        TransactionDescription:
+          type: string
+          format: string
+        TransactionRateType:
+          type: string
+          format: string
+        TransactionInterestCharge:
+          type: string
+          format: string
+        ManagedPositionLimits:
+          type: string
+          format: string
+        PositionLimitType:
+          type: string
+          format: string
+        PositionLimitSettings:
+          type: string
+          format: string
+        PositionLimitValue:
+          type: string
+          format: string
+        AmountBlock:
+          type: string
+          format: string
+        AmountBlockType:
+          type: string
+          format: string
+        Priority:
+          type: string
+          format: string
+        DateType:
+          type: string
+          format: string
+        InitiationDate:
+          $ref: '#/components/schemas/date'
+        Status:
+          type: string
+          format: string
+    RetrieveFinancialTransactionCaptureResponse_FinancialTransactionCapture:
+      type: object
+      properties:
+        PostingDescription:
+          type: string
+          format: string
+        PostingTransaction:
+          type: string
+          format: string
+        PostingValueDate:
+          $ref: '#/components/schemas/date'
+  responses:
+    BadRequest:
+      description: BadRequest
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/HTTPError'
+    Unauthorized:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/HTTPError'
+    Forbidden:
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/HTTPError'
+    NotFound:
+      description: NotFound
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/HTTPError'
+    TooManyRequests:
+      description: TooManyRequests
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/HTTPError'
+    InternalServerError:
+      description: InternalServerError
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/HTTPError'
+    InitiateFinancialPositionLogResponse:
+      description: InitiateFinancialPositionLogResponse
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/InitiateFinancialPositionLogResponse'
+    UpdateFinancialPositionLogResponse:
+      description: UpdateFinancialPositionLogResponse
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/UpdateFinancialPositionLogResponse'
+    RetrieveFinancialPositionLogResponse:
+      description: RetrieveFinancialPositionLogResponse
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/RetrieveFinancialPositionLogResponse'
+    FinancialTransactionCapture:
+      description: FinancialTransactionCapture
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/FinancialTransactionCapture'
+    RetrieveFinancialTransactionCaptureResponse:
+      description: RetrieveFinancialTransactionCaptureResponse
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/RetrieveFinancialTransactionCaptureResponse'
+  parameters:
+    positionkeepingid:
+      name: positionkeepingid
+      in: path
+      required: true
+      style: simple
+      explode: false
+      schema:
+        type: string
+    financialtransactioncaptureid:
+      name: financialtransactioncaptureid
+      in: path
+      required: true
+      style: simple
+      explode: false
+      schema:
+        type: string
+  requestBodies:
+    InitiateFinancialPositionLogRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/InitiateFinancialPositionLogRequest'
+      required: true
+    UpdateFinancialPositionLogRequest:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/UpdateFinancialPositionLogRequest'
+      required: true
+    FinancialTransactionCapture:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/FinancialTransactionCapture'
+      required: true

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="ACHOperationsEndpoint" xmlns="http://ws.apache.org/ns/synapse">
+    <http method="post" uri-template="http://localhost:8290/ACHOperationsBackend/ACHOperations/{uri.var.achoperationsid}/OutboundACH/{uri.var.outboundachid}/Initiate">
+        <suspendOnFailure>
+            <initialDuration>-1</initialDuration>
+            <progressionFactor>1.0</progressionFactor>
+        </suspendOnFailure>
+        <markForSuspension>
+            <retriesBeforeSuspension>0</retriesBeforeSuspension>
+        </markForSuspension>
+    </http>
+</endpoint>

@@ -1,0 +1,38 @@
+map_S_root_S_root = function(){ 
+var outputroot={};
+
+outputroot =  {};
+outputroot.PaymentOrderProcedure =  {};
+outputroot.PaymentOrderProcedure.PaymentTransactionInitiatorReference = inputroot.PaymentOrderProcedure.PaymentTransactionInitiatorReference;
+outputroot.PaymentOrderProcedure.PayerReference = inputroot.PaymentOrderProcedure.PayerReference;
+outputroot.PaymentOrderProcedure.PayerBankReference = inputroot.PaymentOrderProcedure.PayerBankReference;
+outputroot.PaymentOrderProcedure.PayerProductInstanceReference = inputroot.PaymentOrderProcedure.PayerProductInstanceReference;
+outputroot.PaymentOrderProcedure.PayeeReference = inputroot.PaymentOrderProcedure.PayeeReference;
+outputroot.PaymentOrderProcedure.PayeeBankReference = inputroot.PaymentOrderProcedure.PayeeBankReference;
+outputroot.PaymentOrderProcedure.PayeeProductInstanceReference = inputroot.PaymentOrderProcedure.PayeeProductInstanceReference;
+outputroot.PaymentOrderProcedure.Amount = inputroot.PaymentOrderProcedure.Amount;
+outputroot.PaymentOrderProcedure.Currency = inputroot.PaymentOrderProcedure.Currency;
+outputroot.PaymentOrderProcedure.DateType = inputroot.PaymentOrderProcedure.DateType;
+outputroot.PaymentOrderProcedure.PaymentMechanismType = inputroot.PaymentOrderProcedure.PaymentMechanismType;
+outputroot.PaymentOrderProcedure.PaymentInstructions = inputroot.PaymentOrderProcedure.PaymentInstructions;
+outputroot.PaymentOrderProcedure.InterestedParties = inputroot.PaymentOrderProcedure.InterestedParties;
+outputroot.PaymentOrderProcedure.ProductType = inputroot.PaymentOrderProcedure.ProductType;
+outputroot.PaymentOrderProcedure.SettlementInstructions = inputroot.PaymentOrderProcedure.SettlementInstructions;
+return outputroot;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

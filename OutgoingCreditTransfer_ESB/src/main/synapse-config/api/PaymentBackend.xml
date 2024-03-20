@@ -1,0 +1,1275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/PaymentBackend" name="PaymentBackend" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" url-mapping="/PaymentInitiation/Initiate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <!--Business Logic Goes Here-->
+            <log level="full"/>
+            <payloadFactory media-type="json">
+                <format>{
+						  "PaymentInitiationTransaction": {
+						    "RecurringPaymentRecord": "string",
+						    "RecurringPaymentCustomerReference": "string",
+						    "RecurringPaymentReference": "string",
+						    "DateType": "string",
+						    "PaymentFeesCharges": "string",
+						    "DocumentDirectoryEntryInstanceReference": "string"
+						  }
+						}
+				</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <log/>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" url-mapping="/PaymentOrder/PaymentOrderDetails">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <!--Business Logic Goes Here-->
+            <log level="full"/>
+            <payloadFactory media-type="json">
+                <format>{
+						  "PaymentOrderProcedure": {
+						    "PaymentTransactionInitiatorReference": "string",
+						    "PayerReference": "string",
+						    "PayerBankReference": "string",
+						    "PayerProductInstanceReference": "string",
+						    "PayeeReference": "string",
+						    "PayeeBankReference": "string",
+						    "PayeeProductInstanceReference": "string",
+						    "Amount": "string",
+						    "Currency": "111",
+						    "DateType": "string",
+						    "PaymentMechanismType": "string",
+						    "PaymentInstructions": "string",
+						    "InterestedParties": "string",
+						    "ProductType": "string",
+						    "SettlementInstructions": "string"
+						  }
+						}
+				</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <log/>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/PaymentOrder/Initiate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <!--Business Logic Goes Here-->
+            <log level="full"/>
+            <payloadFactory media-type="json">
+                <format>{
+    						"PaymentOrderProcedure": {
+        						"PaymentMechanismType": "paymentMechanismType"
+    						},
+							"CurrentaccountId": "12345"
+						}
+				</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <log/>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" url-mapping="/PaymentExecution/PaymentExecutionDetails">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <!--Business Logic Goes Here-->
+            <!-- InternalBankAccount , SWIFTPayment, SettlementClearing-->
+            <log level="full"/>
+            <payloadFactory media-type="json">
+                <format>{
+						  "PaymentExecutionProcedure": {
+						    "PaymentTransactionInitiatorReference": "string",
+						    "PaymentOrderReference": "string",
+						    "PayerReference": "string",
+						    "PayerBankReference": "string",
+						    "PayerProductInstanceReference": "string",
+						    "PayeeReference": "string",
+						    "PayeeBankReference": "string",
+						    "PayeeProductInstanceReference": "string",
+						    "Amount": "string",
+						    "Currency": "string",
+						    "DateType": "string",
+						    "WashAccountReference": "string",
+						    "IntermediaryAccountReference": "string",
+						    "PaymentMechanismType": "string"
+						  },
+						  "OutgoingCreditTransfer": true,
+						  "PaymentType": "InternalBankAccount"	
+					  	  }
+				</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <log/>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/CurrentAccount/{currentaccountid}/Retrieve">
+        <inSequence>
+            <log level="full"/>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{
+						  "CurrentAccountFacility": {
+						    "ProductInstanceReference": "string",
+						    "CurrentAccountNumber": {
+						      "AccountIdentificationType": "string",
+						      "AccountIdentification": {
+						        "IdentifierValue": {
+						          "Value": "string"
+						        },
+						        "IdentifierIssuingAuthority": {
+						          "PartyReference": {
+						            "PartyName": {
+						              "Name": "string"
+						            },
+						            "PartyType": "Person",
+						            "PartyDateTime": {
+						              "DateTimeContent": "string",
+						              "TimeZoneCode": "string",
+						              "DaylightSavingIndicator": "string"
+						            },
+						            "PartyIdentification": {
+						              "PartyIdentificationType": "string",
+						              "PartyIdentification": "string"
+						            }
+						          },
+						          "PartyInvolvement": {
+						            "PartyRoleType": {
+						              "Text": "string"
+						            },
+						            "PartyRoleName": {
+						              "Name": "string"
+						            },
+						            "PartyRoleValidityPeriod": {
+						              "FromDateTime": {
+						                "DateTimeContent": "string",
+						                "TimeZoneCode": "string",
+						                "DaylightSavingIndicator": "string"
+						              },
+						              "ToDateTime": {
+						                "DateTimeContent": "string",
+						                "TimeZoneCode": "string",
+						                "DaylightSavingIndicator": "string"
+						              }
+						            },
+						            "PartyInvolvementType": "Agreementinvolvement"
+						          }
+						        },
+						        "IdentifierStartDate": {
+						          "DateTimeContent": "string",
+						          "TimeZoneCode": "string",
+						          "DaylightSavingIndicator": "string"
+						        },
+						        "IdentifierEndDate": {
+						          "DateTimeContent": "string",
+						          "TimeZoneCode": "string",
+						          "DaylightSavingIndicator": "string"
+						        }
+						      }
+						    },
+						    "CustomerReference": "string",
+						    "BankBranchLocationReference": "string",
+						    "AccountType": {
+						      "AccountType": "string",
+						      "AccountTypeName": {
+						        "Name": "string"
+						      }
+						    },
+						    "AccountCurrency": {
+						      "AccountCurrencyType": "string",
+						      "AccountCurrency": {
+						        "Currencycode": "string"
+						      }
+						    },
+						    "TaxReference": "string",
+						    "EntitlementOptionDefinition": "string",
+						    "EntitlementOptionSetting": "string",
+						    "RestrictionOptionDefinition": "string",
+						    "RestrictionOptionSetting": "string",
+						    "Associations": "string",
+						    "AssociationType": "string",
+						    "AssociationObligationEntitlement": "string",
+						    "AssociationReference": "string",
+						    "LinkedAccounts": {
+						      "AccountStatus": {
+						        "AccountStatus": {
+						          "StatusReason": {
+						            "Text": "string"
+						          },
+						          "StatusDateTime": {
+						            "DateTimeContent": "string",
+						            "TimeZoneCode": "string",
+						            "DaylightSavingIndicator": "string"
+						          },
+						          "StatusValidityPeriod": {
+						            "FromDateTime": {
+						              "DateTimeContent": "string",
+						              "TimeZoneCode": "string",
+						              "DaylightSavingIndicator": "string"
+						            },
+						            "ToDateTime": {
+						              "DateTimeContent": "string",
+						              "TimeZoneCode": "string",
+						              "DaylightSavingIndicator": "string"
+						            }
+						          },
+						          "StatusInvolvedParty": {
+						            "PartyReference": {
+						              "PartyName": {
+						                "Name": "string"
+						              },
+						              "PartyType": "Person",
+						              "PartyDateTime": {
+						                "DateTimeContent": "string",
+						                "TimeZoneCode": "string",
+						                "DaylightSavingIndicator": "string"
+						              },
+						              "PartyIdentification": {
+						                "PartyIdentificationType": "string",
+						                "PartyIdentification": "string"
+						              }
+						            },
+						            "PartyInvolvement": {
+						              "PartyRoleType": {
+						                "Text": "string"
+						              },
+						              "PartyRoleName": {
+						                "Name": "string"
+						              },
+						              "PartyRoleValidityPeriod": {
+						                "FromDateTime": {
+						                  "DateTimeContent": "string",
+						                  "TimeZoneCode": "string",
+						                  "DaylightSavingIndicator": "string"
+						                },
+						                "ToDateTime": {
+						                  "DateTimeContent": "string",
+						                  "TimeZoneCode": "string",
+						                  "DaylightSavingIndicator": "string"
+						                }
+						              },
+						              "PartyInvolvementType": "Agreementinvolvement"
+						            }
+						          }
+						        },
+						        "AccountStatusType": "string"
+						      },
+						      "AccountIdentification": {
+						        "AccountIdentificationType": "string",
+						        "AccountIdentification": {
+						          "IdentifierValue": {
+						            "Value": "string"
+						          },
+						          "IdentifierIssuingAuthority": {
+						            "PartyReference": {
+						              "PartyName": {
+						                "Name": "string"
+						              },
+						              "PartyType": "Person",
+						              "PartyDateTime": {
+						                "DateTimeContent": "string",
+						                "TimeZoneCode": "string",
+						                "DaylightSavingIndicator": "string"
+						              },
+						              "PartyIdentification": {
+						                "PartyIdentificationType": "string",
+						                "PartyIdentification": "string"
+						              }
+						            },
+						            "PartyInvolvement": {
+						              "PartyRoleType": {
+						                "Text": "string"
+						              },
+						              "PartyRoleName": {
+						                "Name": "string"
+						              },
+						              "PartyRoleValidityPeriod": {
+						                "FromDateTime": {
+						                  "DateTimeContent": "string",
+						                  "TimeZoneCode": "string",
+						                  "DaylightSavingIndicator": "string"
+						                },
+						                "ToDateTime": {
+						                  "DateTimeContent": "string",
+						                  "TimeZoneCode": "string",
+						                  "DaylightSavingIndicator": "string"
+						                }
+						              },
+						              "PartyInvolvementType": "Agreementinvolvement"
+						            }
+						          },
+						          "IdentifierStartDate": {
+						            "DateTimeContent": "string",
+						            "TimeZoneCode": "string",
+						            "DaylightSavingIndicator": "string"
+						          },
+						          "IdentifierEndDate": {
+						            "DateTimeContent": "string",
+						            "TimeZoneCode": "string",
+						            "DaylightSavingIndicator": "string"
+						          }
+						        }
+						      },
+						      "AccountDate": {
+						        "AccountDateType": "string",
+						        "AccountDate": {
+						          "DateTimeContent": "string",
+						          "TimeZoneCode": "string",
+						          "DaylightSavingIndicator": "string"
+						        }
+						      },
+						      "AccountType": {
+						        "AccountType": "string",
+						        "AccountTypeName": {
+						          "Name": "string"
+						        }
+						      },
+						      "AccountPurpose": {
+						        "Text": "string"
+						      },
+						      "AccountBalance": {
+						        "AccountBalance": {
+						          "AmountValue": "string",
+						          "AmountCurrency": {
+						            "Currencycode": "string"
+						          },
+						          "DecimalPointPosition": "string"
+						        },
+						        "AccountBalanceType": "string",
+						        "AccounBalanceDate": {
+						          "DateTimeContent": "string",
+						          "TimeZoneCode": "string",
+						          "DaylightSavingIndicator": "string"
+						        }
+						      },
+						      "AccountCurrency": {
+						        "AccountCurrencyType": "string",
+						        "AccountCurrency": {
+						          "Currencycode": "string"
+						        }
+						      },
+						      "AccountDescription": {
+						        "Text": "string"
+						      }
+						    },
+						    "LinkType": {
+						      "Text": "string"
+						    },
+						    "AccountDetails": "string",
+						    "PositionLimits": "string",
+						    "PositionLimitType": "string",
+						    "PositionLimitSettings": "string",
+						    "PositionLimitValue": "string",
+						    "DateType": "string"
+						  }
+						}
+				</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/PaymentExecution/Initiate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <!--Business Logic Goes Here-->
+            <log level="full"/>
+            <payloadFactory media-type="json">
+                <format>{
+						  "PaymentExecutionProcedure": {
+						    "ACHAccessServiceSessionReference": "string",
+						    "ACHAccessSchedule": "string",
+						    "CorrespondentServiceSessionReference": "string",
+						    "CorrespondentServiceAccessSchedule": "string"
+						  }
+						}
+				</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" url-mapping="/PositionKeeping/PositionKeepingDetails">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <!--Business Logic Goes Here-->
+            <log level="full"/>
+            <payloadFactory media-type="json">
+                <format>{
+     					  "FinancialPositionLog": {
+						    "TransactionLogType": "string",
+						    "ProductInstanceReference": "string",
+						    "CustomerReference": "string",
+						    "CounterpartyReference": "string",
+						    "BaseCurrency": {
+						      "Currencycode": "string"
+						    },
+						    "InterestApplicationRecord": "string",
+						    "ManagedPositionLimits": "string",
+						    "PositionLimitType": "string",
+						    "PositionLimitSettings": "string",
+						    "AmountBlock": "string",
+						    "AmountBlockType": "string",
+						    "Priority": "string",
+						    "DateType": "string",
+						    "InitiationDate": {
+						      "DateContent": "string"
+						    },
+						    "Status": "string"
+						  },
+						  "PositionKeepingId": "POS-123"
+						}
+				</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/PositionKeeping/{positionkeepingid}/Update">
+        <inSequence>
+            <log level="full"/>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.positionkeepingid')" name="positionkeepingid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{
+						  "FinancialPositionLog": {
+						    "TransactionLogType": "string",
+						    "ProductInstanceReference": "string",
+						    "CustomerReference": "string",
+						    "CounterpartyReference": "string",
+						    "BaseCurrency": {
+						      "Currencycode": "string"
+						    },
+						    "InterestApplicationRecord": "string",
+						    "ManagedPositionLimits": "string",
+						    "PositionLimitType": "string",
+						    "PositionLimitSettings": "string",
+						    "AmountBlock": "string",
+						    "AmountBlockType": "string",
+						    "Priority": "string",
+						    "DateType": "string",
+						    "InitiationDate": {
+						      "DateContent": "string"
+						    },
+						    "Status": "string"
+						  },
+						  "CurrentaccountId": "POS-CURR-123"
+						}
+				</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" url-mapping="/InternalBankAccount/InternalBankAccountDetails">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <!--Business Logic Goes Here-->
+            <log level="full"/>
+            <payloadFactory media-type="json">
+                <format>{
+						  "InternalBankAccountLogParameterType": {
+						    "Text": "string"
+						  },
+						  "InternalBankAccountLogSelectedOption": {
+						    "ServiceName": {
+						      "Name": "string"
+						    },
+						    "ServiceDescription": {
+						      "Text": "string"
+						    },
+						    "ServiceType": {
+						      "ServiceTypeName": {
+						        "Name": "string"
+						      },
+						      "ServiceType": "string"
+						    }
+						  },
+						  "InternalBankAccountLogType": {
+						    "Text": "string"
+						  },
+						  "InternalBankAccountLogSchedule": {
+						    "ScheduleType": "string"
+						  },
+						  "InternalBankAccountLogUsageLog": {
+						    "LogType": "string",
+						    "LogPeriod": "string",
+						    "LogDate": "string",
+						    "LogIdentification": "string"
+						  },
+						  "InternalBankAccountLogUpdateLog": {
+						    "LogType": "string",
+						    "LogPeriod": "string",
+						    "LogDate": "string",
+						    "LogIdentification": "string"
+						  },
+						  "InternalBankAccountLogAssociatedParty": {
+						    "PartyReference": {
+						      "PartyName": {
+						        "Name": "string"
+						      },
+						      "PartyType": "Person",
+						      "PartyDateTime": {
+						        "DateTimeContent": "string",
+						        "TimeZoneCode": "string",
+						        "DaylightSavingIndicator": "string"
+						      },
+						      "PartyIdentification": {
+						        "PartyIdentificationType": "string",
+						        "PartyIdentification": {
+						          "IdentifierValue": {
+						            "Value": "string"
+						          },
+						          "IdentifierIssuingAuthority": "string",
+						          "IdentifierStartDate": {
+						            "DateTimeContent": "string",
+						            "TimeZoneCode": "string",
+						            "DaylightSavingIndicator": "string"
+						          },
+						          "IdentifierEndDate": {
+						            "DateTimeContent": "string",
+						            "TimeZoneCode": "string",
+						            "DaylightSavingIndicator": "string"
+						          }
+						        }
+						      }
+						    },
+						    "PartyInvolvement": {
+						      "PartyRoleType": {
+						        "Text": "string"
+						      },
+						      "PartyRoleName": {
+						        "Name": "string"
+						      },
+						      "PartyRoleValidityPeriod": {
+						        "FromDateTime": {
+						          "DateTimeContent": "string",
+						          "TimeZoneCode": "string",
+						          "DaylightSavingIndicator": "string"
+						        },
+						        "ToDateTime": {
+						          "DateTimeContent": "string",
+						          "TimeZoneCode": "string",
+						          "DaylightSavingIndicator": "string"
+						        }
+						      },
+						      "PartyInvolvementType": "Agreementinvolvement"
+						    }
+						  },
+						  "InternalBankAccountLogBusinessUnitReference": {
+						    "BusinessFunction": "string",
+						    "Goal": "string"
+						  },
+						  "InternalBankAccountLogCustomerReference": {
+						    "PartyReference": {
+						      "PartyName": {
+						        "Name": "string"
+						      },
+						      "PartyType": "Person",
+						      "PartyDateTime": {
+						        "DateTimeContent": "string",
+						        "TimeZoneCode": "string",
+						        "DaylightSavingIndicator": "string"
+						      },
+						      "PartyIdentification": {
+						        "PartyIdentificationType": "string",
+						        "PartyIdentification": {
+						          "IdentifierValue": {
+						            "Value": "string"
+						          },
+						          "IdentifierIssuingAuthority": "string",
+						          "IdentifierStartDate": {
+						            "DateTimeContent": "string",
+						            "TimeZoneCode": "string",
+						            "DaylightSavingIndicator": "string"
+						          },
+						          "IdentifierEndDate": {
+						            "DateTimeContent": "string",
+						            "TimeZoneCode": "string",
+						            "DaylightSavingIndicator": "string"
+						          }
+						        }
+						      }
+						    },
+						    "PartyInvolvement": {
+						      "PartyRoleType": {
+						        "Text": "string"
+						      },
+						      "PartyRoleName": {
+						        "Name": "string"
+						      },
+						      "PartyRoleValidityPeriod": {
+						        "FromDateTime": {
+						          "DateTimeContent": "string",
+						          "TimeZoneCode": "string",
+						          "DaylightSavingIndicator": "string"
+						        },
+						        "ToDateTime": {
+						          "DateTimeContent": "string",
+						          "TimeZoneCode": "string",
+						          "DaylightSavingIndicator": "string"
+						        }
+						      },
+						      "PartyInvolvementType": "Agreementinvolvement"
+						    }
+						  },
+						  "InternalBankAccountLogServiceConfiguration": {
+						    "Text": "string"
+						  },
+						  "InternalBankAccountLogPosition": {
+						    "PositionValue": "string",
+						    "PositionQuantity": "string",
+						    "PositionDate": "string",
+						    "PositionAmount": "string"
+						  },
+						  "InternalBankAccountLogPositionType": {
+						    "PositionType": "string"
+						  },
+						  "InternalBankAccountLogPositionLimitTime": {
+						    "LimitType": {
+						      "LimitTypeName": {
+						        "Name": "string"
+						      },
+						      "LimitType": "string"
+						    },
+						    "LimitCurrency": {
+						      "Currencycode": "string"
+						    },
+						    "LimitValidityPeriod": {
+						      "FromDateTime": {
+						        "DateTimeContent": "string",
+						        "TimeZoneCode": "string",
+						        "DaylightSavingIndicator": "string"
+						      },
+						      "ToDateTime": {
+						        "DateTimeContent": "string",
+						        "TimeZoneCode": "string",
+						        "DaylightSavingIndicator": "string"
+						      }
+						    },
+						    "LimitAmount": {
+						      "AmountValue": "string",
+						      "AmountCurrency": {
+						        "Currencycode": "string"
+						      },
+						      "DecimalPointPosition": "string"
+						    },
+						    "LimitStatus": {
+						      "LimitStatus": {
+						        "StatusReason": {
+						          "Text": "string"
+						        },
+						        "StatusDateTime": {
+						          "DateTimeContent": "string",
+						          "TimeZoneCode": "string",
+						          "DaylightSavingIndicator": "string"
+						        },
+						        "StatusValidityPeriod": {
+						          "FromDateTime": {
+						            "DateTimeContent": "string",
+						            "TimeZoneCode": "string",
+						            "DaylightSavingIndicator": "string"
+						          },
+						          "ToDateTime": {
+						            "DateTimeContent": "string",
+						            "TimeZoneCode": "string",
+						            "DaylightSavingIndicator": "string"
+						          }
+						        },
+						        "StatusInvolvedParty": {
+						          "PartyReference": {
+						            "PartyName": {
+						              "Name": "string"
+						            },
+						            "PartyType": "Person",
+						            "PartyDateTime": {
+						              "DateTimeContent": "string",
+						              "TimeZoneCode": "string",
+						              "DaylightSavingIndicator": "string"
+						            },
+						            "PartyIdentification": {
+						              "PartyIdentificationType": "string",
+						              "PartyIdentification": {
+						                "IdentifierValue": {
+						                  "Value": "string"
+						                },
+						                "IdentifierIssuingAuthority": "string",
+						                "IdentifierStartDate": {
+						                  "DateTimeContent": "string",
+						                  "TimeZoneCode": "string",
+						                  "DaylightSavingIndicator": "string"
+						                },
+						                "IdentifierEndDate": {
+						                  "DateTimeContent": "string",
+						                  "TimeZoneCode": "string",
+						                  "DaylightSavingIndicator": "string"
+						                }
+						              }
+						            }
+						          },
+						          "PartyInvolvement": {
+						            "PartyRoleType": {
+						              "Text": "string"
+						            },
+						            "PartyRoleName": {
+						              "Name": "string"
+						            },
+						            "PartyRoleValidityPeriod": {
+						              "FromDateTime": {
+						                "DateTimeContent": "string",
+						                "TimeZoneCode": "string",
+						                "DaylightSavingIndicator": "string"
+						              },
+						              "ToDateTime": {
+						                "DateTimeContent": "string",
+						                "TimeZoneCode": "string",
+						                "DaylightSavingIndicator": "string"
+						              }
+						            },
+						            "PartyInvolvementType": "Agreementinvolvement"
+						          }
+						        }
+						      },
+						      "LimitStatusType": "string"
+						    },
+						    "LimitRate": {
+						      "RateValue": "string",
+						      "RateUnit": "string",
+						      "RatePeriod": "string",
+						      "RateCapitalUnit": "string"
+						    },
+						    "LimitFrequency": {
+						      "FrequencyCode": "string",
+						      "FrequencyName": {
+						        "Name": "string"
+						      },
+						      "FrequencyDefinition": {
+						        "Text": "string"
+						      }
+						    }
+						  },
+						  "InternalBankAccountLogReference": {
+						    "LogType": "string",
+						    "LogPeriod": "string",
+						    "LogDate": "string",
+						    "LogIdentification": "string"
+						  },
+						 "InternalBankAccountId": "123"
+						}
+				</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/InternalBankAccount/{internalbankaccountid}/Capture">
+        <inSequence>
+            <log level="full"/>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.internalbankaccountid')" name="internalbankaccountid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{
+						  "InternalBankAccountLogParameterType": {
+						    "Text": "string"
+						  },
+						  "InternalBankAccountLogSelectedOption": {
+						    "ServiceName": {
+						      "Name": "string"
+						    },
+						    "ServiceDescription": {
+						      "Text": "string"
+						    },
+						    "ServiceType": {
+						      "ServiceTypeName": {
+						        "Name": "string"
+						      },
+						      "ServiceType": "string"
+						    }
+						  },
+						  "InternalBankAccountLogType": {
+						    "Text": "string"
+						  },
+						  "InternalBankAccountLogSchedule": {
+						    "ScheduleType": "string"
+						  },
+						  "InternalBankAccountLogUsageLog": {
+						    "LogType": "string",
+						    "LogPeriod": "string",
+						    "LogDate": "string",
+						    "LogIdentification": "string"
+						  },
+						  "InternalBankAccountLogUpdateLog": {
+						    "LogType": "string",
+						    "LogPeriod": "string",
+						    "LogDate": "string",
+						    "LogIdentification": "string"
+						  },
+						  "InternalBankAccountLogAssociatedParty": {
+						    "PartyReference": {
+						      "PartyName": {
+						        "Name": "string"
+						      },
+						      "PartyType": "Person",
+						      "PartyDateTime": {
+						        "DateTimeContent": "string",
+						        "TimeZoneCode": "string",
+						        "DaylightSavingIndicator": "string"
+						      },
+						      "PartyIdentification": {
+						        "PartyIdentificationType": "string",
+						        "PartyIdentification": {
+						          "IdentifierValue": {
+						            "Value": "string"
+						          },
+						          "IdentifierIssuingAuthority": "string",
+						          "IdentifierStartDate": {
+						            "DateTimeContent": "string",
+						            "TimeZoneCode": "string",
+						            "DaylightSavingIndicator": "string"
+						          },
+						          "IdentifierEndDate": {
+						            "DateTimeContent": "string",
+						            "TimeZoneCode": "string",
+						            "DaylightSavingIndicator": "string"
+						          }
+						        }
+						      }
+						    },
+						    "PartyInvolvement": {
+						      "PartyRoleType": {
+						        "Text": "string"
+						      },
+						      "PartyRoleName": {
+						        "Name": "string"
+						      },
+						      "PartyRoleValidityPeriod": {
+						        "FromDateTime": {
+						          "DateTimeContent": "string",
+						          "TimeZoneCode": "string",
+						          "DaylightSavingIndicator": "string"
+						        },
+						        "ToDateTime": {
+						          "DateTimeContent": "string",
+						          "TimeZoneCode": "string",
+						          "DaylightSavingIndicator": "string"
+						        }
+						      },
+						      "PartyInvolvementType": "Agreementinvolvement"
+						    }
+						  },
+						  "InternalBankAccountLogBusinessUnitReference": {
+						    "BusinessFunction": "string",
+						    "Goal": "string"
+						  },
+						  "InternalBankAccountLogCustomerReference": {
+						    "PartyReference": {
+						      "PartyName": {
+						        "Name": "string"
+						      },
+						      "PartyType": "Person",
+						      "PartyDateTime": {
+						        "DateTimeContent": "string",
+						        "TimeZoneCode": "string",
+						        "DaylightSavingIndicator": "string"
+						      },
+						      "PartyIdentification": {
+						        "PartyIdentificationType": "string",
+						        "PartyIdentification": {
+						          "IdentifierValue": {
+						            "Value": "string"
+						          },
+						          "IdentifierIssuingAuthority": "string",
+						          "IdentifierStartDate": {
+						            "DateTimeContent": "string",
+						            "TimeZoneCode": "string",
+						            "DaylightSavingIndicator": "string"
+						          },
+						          "IdentifierEndDate": {
+						            "DateTimeContent": "string",
+						            "TimeZoneCode": "string",
+						            "DaylightSavingIndicator": "string"
+						          }
+						        }
+						      }
+						    },
+						    "PartyInvolvement": {
+						      "PartyRoleType": {
+						        "Text": "string"
+						      },
+						      "PartyRoleName": {
+						        "Name": "string"
+						      },
+						      "PartyRoleValidityPeriod": {
+						        "FromDateTime": {
+						          "DateTimeContent": "string",
+						          "TimeZoneCode": "string",
+						          "DaylightSavingIndicator": "string"
+						        },
+						        "ToDateTime": {
+						          "DateTimeContent": "string",
+						          "TimeZoneCode": "string",
+						          "DaylightSavingIndicator": "string"
+						        }
+						      },
+						      "PartyInvolvementType": "Agreementinvolvement"
+						    }
+						  },
+						  "InternalBankAccountLogServiceConfiguration": {
+						    "Text": "string"
+						  },
+						  "InternalBankAccountLogPosition": {
+						    "PositionValue": "string",
+						    "PositionQuantity": "string",
+						    "PositionDate": "string",
+						    "PositionAmount": "string"
+						  },
+						  "InternalBankAccountLogPositionType": {
+						    "PositionType": "string"
+						  },
+						  "InternalBankAccountLogPositionLimitTime": {
+						    "LimitType": {
+						      "LimitTypeName": {
+						        "Name": "string"
+						      },
+						      "LimitType": "string"
+						    },
+						    "LimitCurrency": {
+						      "Currencycode": "string"
+						    },
+						    "LimitValidityPeriod": {
+						      "FromDateTime": {
+						        "DateTimeContent": "string",
+						        "TimeZoneCode": "string",
+						        "DaylightSavingIndicator": "string"
+						      },
+						      "ToDateTime": {
+						        "DateTimeContent": "string",
+						        "TimeZoneCode": "string",
+						        "DaylightSavingIndicator": "string"
+						      }
+						    },
+						    "LimitAmount": {
+						      "AmountValue": "string",
+						      "AmountCurrency": {
+						        "Currencycode": "string"
+						      },
+						      "DecimalPointPosition": "string"
+						    },
+						    "LimitStatus": {
+						      "LimitStatus": {
+						        "StatusReason": {
+						          "Text": "string"
+						        },
+						        "StatusDateTime": {
+						          "DateTimeContent": "string",
+						          "TimeZoneCode": "string",
+						          "DaylightSavingIndicator": "string"
+						        },
+						        "StatusValidityPeriod": {
+						          "FromDateTime": {
+						            "DateTimeContent": "string",
+						            "TimeZoneCode": "string",
+						            "DaylightSavingIndicator": "string"
+						          },
+						          "ToDateTime": {
+						            "DateTimeContent": "string",
+						            "TimeZoneCode": "string",
+						            "DaylightSavingIndicator": "string"
+						          }
+						        },
+						        "StatusInvolvedParty": {
+						          "PartyReference": {
+						            "PartyName": {
+						              "Name": "string"
+						            },
+						            "PartyType": "Person",
+						            "PartyDateTime": {
+						              "DateTimeContent": "string",
+						              "TimeZoneCode": "string",
+						              "DaylightSavingIndicator": "string"
+						            },
+						            "PartyIdentification": {
+						              "PartyIdentificationType": "string",
+						              "PartyIdentification": {
+						                "IdentifierValue": {
+						                  "Value": "string"
+						                },
+						                "IdentifierIssuingAuthority": "string",
+						                "IdentifierStartDate": {
+						                  "DateTimeContent": "string",
+						                  "TimeZoneCode": "string",
+						                  "DaylightSavingIndicator": "string"
+						                },
+						                "IdentifierEndDate": {
+						                  "DateTimeContent": "string",
+						                  "TimeZoneCode": "string",
+						                  "DaylightSavingIndicator": "string"
+						                }
+						              }
+						            }
+						          },
+						          "PartyInvolvement": {
+						            "PartyRoleType": {
+						              "Text": "string"
+						            },
+						            "PartyRoleName": {
+						              "Name": "string"
+						            },
+						            "PartyRoleValidityPeriod": {
+						              "FromDateTime": {
+						                "DateTimeContent": "string",
+						                "TimeZoneCode": "string",
+						                "DaylightSavingIndicator": "string"
+						              },
+						              "ToDateTime": {
+						                "DateTimeContent": "string",
+						                "TimeZoneCode": "string",
+						                "DaylightSavingIndicator": "string"
+						              }
+						            },
+						            "PartyInvolvementType": "Agreementinvolvement"
+						          }
+						        }
+						      },
+						      "LimitStatusType": "string"
+						    },
+						    "LimitRate": {
+						      "RateValue": "string",
+						      "RateUnit": "string",
+						      "RatePeriod": "string",
+						      "RateCapitalUnit": "string"
+						    },
+						    "LimitFrequency": {
+						      "FrequencyCode": "string",
+						      "FrequencyName": {
+						        "Name": "string"
+						      },
+						      "FrequencyDefinition": {
+						        "Text": "string"
+						      }
+						    }
+						  },
+						  "InternalBankAccountLogReference": {
+						    "LogType": "string",
+						    "LogPeriod": "string",
+						    "LogDate": "string",
+						    "LogIdentification": "string"
+						  }
+						}
+					</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/OutboundPayments/{outboundpaymentsid}/Exchange">
+        <inSequence>
+            <log level="full"/>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.outboundpaymentsid')" name="outboundpaymentsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{
+						  "OutboundPayments": {
+						    "CorrespondentTransactionRecord": "string",
+						    "SWIFTTransactionReference": "string",
+						    "PayerBankReference": "string",
+						    "PayerReference": "string",
+						    "CorrespondedBankReference": "string",
+						    "PayerProductInstanceReference": "string",
+						    "PayeeReference": "string",
+						    "PayeeProductInstanceReference": "string",
+						    "PayeeBankReference": "string",
+						    "SpecialInstructions": "string",
+						    "Amount": "string",
+						    "Currency": "string",
+						    "DateType": "string"
+						  }
+						}
+				</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" url-mapping="/ACHOperations/ACHOperationsDetails">
+        <inSequence>
+            <log level="full"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{
+						  "InboundACH": {
+						    "ACHPaymentTransactionReference": "string",
+						    "ACHPaymentTransactionRecord": "string",
+						    "PaymentTransactionInitiatorReference": "string",
+						    "PayerReference": "string",
+						    "PayerBankReference": "string",
+						    "PayerProductInstanceReference": "string",
+						    "PayeeReference": "string",
+						    "PayeeProductInstanceReference": "string",
+						    "PayeeBankReference": "string",
+						    "SpecialInstructions": "string",
+						    "Amount": "string",
+						    "Currency": "string",
+						    "DateType": "string"
+						  },
+						  "ACHOperationsId": "ACH-123",
+						  "OutboundACHId": "OUT-123"
+						}
+				</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" url-mapping="/CorrespondentBankOperations/CorrespondentBankOperationsDetails">
+        <inSequence>
+            <log level="full"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{
+						  "OutboundPayments": {
+						    "CorrespondentTransactionRecord": "string",
+						    "SWIFTTransactionReference": "string",
+						    "PayerBankReference": "string",
+						    "PayerReference": "string",
+						    "CorrespondedBankReference": "string",
+						    "PayerProductInstanceReference": "string",
+						    "PayeeReference": "string",
+						    "PayeeProductInstanceReference": "string",
+						    "PayeeBankReference": "string",
+						    "SpecialInstructions": "string",
+						    "Amount": "string",
+						    "Currency": "string",
+						    "DateType": "string"
+						  },
+						  "PaymentType": "SWIFTPayment", 
+					  	  "CorrespondentBankOperationsId": "CBP123",
+					  	  "OutboundPaymentsId": "OUT123"
+						}
+				</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" url-mapping="/FinancialGateway/FinancialGatewayDetails">
+        <inSequence>
+            <log level="full"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{
+						  "FinancialGatewayOperatingSession": {
+						    "FinancialGatewayServiceType": "string",
+						    "FinancialGatewayServiceSessionStatistics": "string"
+						  },
+						  "Outbound": {
+						    "FinancialGatewayOutboundMessageType": "string",
+						    "FinancialGatewayOutboundMessageRecord": "string",
+						    "FinancialGatewayOutboundMessageSender": "string",
+						    "FinancialGatewayOutboundMessageReceiver": "string",
+						    "FinancialGatewayOutboundMessageStatus": "string"
+						  },
+						  "FinancialGatewayId": "FIN123",
+						  "OutboundId": "OUT123"
+						}
+				</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" url-mapping="/RegulatoryCompliance/RegulatoryComplianceDetails">
+        <inSequence>
+            <log level="full"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{
+						  "RegulatoryComplianceAssessment": {
+						    "RegulatoryAssessmentType": "string",
+						    "BusinessUnitReference": "string",
+						    "ProductandServiceReference": "string",
+						    "CustomerReference": "string",
+						    "RegulatoryAuthorityReference": "string",
+						    "RegulationReference": "string",
+						    "DocumentReference": "string",
+						    "RegulatoryAssessmentWorkProducts": "string"
+						  }
+						}
+				</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

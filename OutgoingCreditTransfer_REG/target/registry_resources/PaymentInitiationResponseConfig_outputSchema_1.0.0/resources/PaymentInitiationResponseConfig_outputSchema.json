@@ -1,0 +1,39 @@
+{
+  "$schema" : "http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#",
+  "outputType" : "JSON",
+  "id" : "http://wso2jsonschema.org",
+  "title" : "root",
+  "type" : "object",
+  "properties" : {
+    "PaymentInitiationTransaction" : {
+      "id" : "http://wso2jsonschema.org/PaymentInitiationTransaction",
+      "type" : "object",
+      "properties" : {
+        "RecurringPaymentRecord" : {
+          "id" : "http://wso2jsonschema.org/PaymentInitiationTransaction/RecurringPaymentRecord",
+          "type" : "string"
+        },
+        "RecurringPaymentCustomerReference" : {
+          "id" : "http://wso2jsonschema.org/PaymentInitiationTransaction/RecurringPaymentCustomerReference",
+          "type" : "string"
+        },
+        "RecurringPaymentReference" : {
+          "id" : "http://wso2jsonschema.org/PaymentInitiationTransaction/RecurringPaymentReference",
+          "type" : "string"
+        },
+        "DateType" : {
+          "id" : "http://wso2jsonschema.org/PaymentInitiationTransaction/DateType",
+          "type" : "string"
+        },
+        "PaymentFeesCharges" : {
+          "id" : "http://wso2jsonschema.org/PaymentInitiationTransaction/PaymentFeesCharges",
+          "type" : "string"
+        },
+        "DocumentDirectoryEntryInstanceReference" : {
+          "id" : "http://wso2jsonschema.org/PaymentInitiationTransaction/DocumentDirectoryEntryInstanceReference",
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+map_S_root_S_root = function(){ 
+var outputroot={};
+
+outputroot =  {};
+outputroot.PaymentOrderProcedure =  {};
+outputroot.PaymentOrderProcedure.PayerReference = inputroot.PaymentInitiationTransaction.PayerReference;
+outputroot.PaymentOrderProcedure.PayerBankReference = inputroot.PaymentInitiationTransaction.PayerBankReference;
+outputroot.PaymentOrderProcedure.PayerProductInstanceReference = inputroot.PaymentInitiationTransaction.PayerProductInstanceReference;
+outputroot.PaymentOrderProcedure.PayeeReference = inputroot.PaymentInitiationTransaction.PayeeReference;
+outputroot.PaymentOrderProcedure.PayeeBankReference = inputroot.PaymentInitiationTransaction.PayeeBankReference;
+outputroot.PaymentOrderProcedure.PayeeProductInstanceReference = inputroot.PaymentInitiationTransaction.PayeeProductInstanceReference;
+outputroot.PaymentOrderProcedure.Amount = inputroot.PaymentInitiationTransaction.Amount;
+outputroot.PaymentOrderProcedure.Currency = inputroot.PaymentInitiationTransaction.Currency;
+outputroot.PaymentOrderProcedure.DateType = inputroot.PaymentInitiationTransaction.DateType;
+outputroot.PaymentOrderProcedure.PaymentMechanismType = inputroot.PaymentInitiationTransaction.PaymentMechanism;
+return outputroot;
+};
+
+
+
+
+
+
+
+
+
+
+
