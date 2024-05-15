@@ -1,0 +1,26 @@
+map_S_root_S_root = function(){ 
+var outputroot={};
+
+var count_i_inputroot_ce78bd93_7df8_49b0_b2ac_19b8f008c7e5 = 0;
+outputroot =  {};
+outputroot.PaymentInitiationTransaction =  {};
+
+for(i_inputroot_ce78bd93_7df8_49b0_b2ac_19b8f008c7e5 in inputroot){
+outputroot.PaymentInitiationTransaction.RecurringPaymentRecord = inputroot[i_inputroot_ce78bd93_7df8_49b0_b2ac_19b8f008c7e5].PaymentInitiationTransaction.RecurringPaymentRecord;
+outputroot.PaymentInitiationTransaction.RecurringPaymentCustomerReference = inputroot[i_inputroot_ce78bd93_7df8_49b0_b2ac_19b8f008c7e5].PaymentInitiationTransaction.RecurringPaymentCustomerReference;
+outputroot.PaymentInitiationTransaction.RecurringPaymentReference = inputroot[i_inputroot_ce78bd93_7df8_49b0_b2ac_19b8f008c7e5].PaymentInitiationTransaction.RecurringPaymentReference;
+outputroot.PaymentInitiationTransaction.DateType = inputroot[i_inputroot_ce78bd93_7df8_49b0_b2ac_19b8f008c7e5].PaymentInitiationTransaction.DateType;
+outputroot.PaymentInitiationTransaction.PaymentFeesCharges = inputroot[i_inputroot_ce78bd93_7df8_49b0_b2ac_19b8f008c7e5].PaymentInitiationTransaction.PaymentFeesCharges;
+outputroot.PaymentInitiationTransaction.DocumentDirectoryEntryInstanceReference = inputroot[i_inputroot_ce78bd93_7df8_49b0_b2ac_19b8f008c7e5].PaymentInitiationTransaction.DocumentDirectoryEntryInstanceReference;
+
+count_i_inputroot_ce78bd93_7df8_49b0_b2ac_19b8f008c7e5++;
+}
+return outputroot;
+};
+
+
+
+
+
+
+

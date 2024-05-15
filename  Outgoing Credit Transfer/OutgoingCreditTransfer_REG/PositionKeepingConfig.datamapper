@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datamapper:DataMapperRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:datamapper="http:///org/wso2/developerstudio/eclipse/gmf/datamapper">
+  <input>
+    <treeNode name="root" schemaDataType="OBJECT" level="1">
+      <node name="FinancialPositionLog" schemaDataType="OBJECT" level="2">
+        <node name="TransactionLogType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/TransactionLogType"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.0/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="ProductInstanceReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/ProductInstanceReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.1/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="CustomerReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/CustomerReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.2/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="CounterpartyReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/CounterpartyReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.3/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="BaseCurrency" schemaDataType="OBJECT" level="3">
+          <node name="Currencycode" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/BaseCurrency/Currencycode"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.4/@node.0/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <properties key="type" value="object"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/BaseCurrency"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <node name="InterestApplicationRecord" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/InterestApplicationRecord"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.5/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="ManagedPositionLimits" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/ManagedPositionLimits"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.6/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="PositionLimitType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/PositionLimitType"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.7/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="PositionLimitSettings" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/PositionLimitSettings"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.8/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="AmountBlock" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/AmountBlock"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.9/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="AmountBlockType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/AmountBlockType"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.10/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="Priority" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/Priority"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.11/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="DateType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/DateType"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.12/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="InitiationDate" schemaDataType="OBJECT" level="3">
+          <node name="DateContent" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/InitiationDate/DateContent"/>
+            <properties key="nullable" value="false"/>
+            <outNode>
+              <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.13/@node.0/@inNode"/>
+            </outNode>
+            <inNode/>
+          </node>
+          <properties key="type" value="object"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/InitiationDate"/>
+          <properties key="nullable" value="false"/>
+          <properties key="properties_id" value="{Currencycode={id=http://wso2jsonschema.org/FinancialPositionLog/BaseCurrency/Currencycode, type=string}}"/>
+          <properties key="properties_id" value="{DateContent={id=http://wso2jsonschema.org/FinancialPositionLog/InitiationDate/DateContent, type=string}}"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <node name="Status" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/Status"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.14/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <properties key="type" value="object"/>
+        <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog"/>
+        <properties key="nullable" value="false"/>
+        <properties key="properties_id" value="{ACHAccessServiceSessionReference={id=http://wso2jsonschema.org/PaymentExecutionProcedure/ACHAccessServiceSessionReference, type=string}, ACHAccessSchedule={id=http://wso2jsonschema.org/PaymentExecutionProcedure/ACHAccessSchedule, type=string}, CorrespondentServiceSessionReference={id=http://wso2jsonschema.org/PaymentExecutionProcedure/CorrespondentServiceSessionReference, type=string}, CorrespondentServiceAccessSchedule={id=http://wso2jsonschema.org/PaymentExecutionProcedure/CorrespondentServiceAccessSchedule, type=string}}"/>
+        <properties key="properties_id" value="{TransactionLogType={id=http://wso2jsonschema.org/FinancialPositionLog/TransactionLogType, type=string}, ProductInstanceReference={id=http://wso2jsonschema.org/FinancialPositionLog/ProductInstanceReference, type=string}, CustomerReference={id=http://wso2jsonschema.org/FinancialPositionLog/CustomerReference, type=string}, CounterpartyReference={id=http://wso2jsonschema.org/FinancialPositionLog/CounterpartyReference, type=string}, BaseCurrency={id=http://wso2jsonschema.org/FinancialPositionLog/BaseCurrency, type=object, properties={Currencycode={id=http://wso2jsonschema.org/FinancialPositionLog/BaseCurrency/Currencycode, type=string}}}, InterestApplicationRecord={id=http://wso2jsonschema.org/FinancialPositionLog/InterestApplicationRecord, type=string}, ManagedPositionLimits={id=http://wso2jsonschema.org/FinancialPositionLog/ManagedPositionLimits, type=string}, PositionLimitType={id=http://wso2jsonschema.org/FinancialPositionLog/PositionLimitType, type=string}, PositionLimitSettings={id=http://wso2jsonschema.org/FinancialPositionLog/PositionLimitSettings, type=string}, AmountBlock={id=http://wso2jsonschema.org/FinancialPositionLog/AmountBlock, type=string}, AmountBlockType={id=http://wso2jsonschema.org/FinancialPositionLog/AmountBlockType, type=string}, Priority={id=http://wso2jsonschema.org/FinancialPositionLog/Priority, type=string}, DateType={id=http://wso2jsonschema.org/FinancialPositionLog/DateType, type=string}, InitiationDate={id=http://wso2jsonschema.org/FinancialPositionLog/InitiationDate, type=object, properties={DateContent={id=http://wso2jsonschema.org/FinancialPositionLog/InitiationDate/DateContent, type=string}}}, Status={id=http://wso2jsonschema.org/FinancialPositionLog/Status, type=string}}"/>
+        <outNode/>
+        <inNode/>
+      </node>
+      <properties key="type" value="object"/>
+      <properties key="$schema" value="http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#"/>
+      <properties key="id" value="http://wso2jsonschema.org"/>
+      <properties key="nullable" value="false"/>
+      <outNode/>
+      <inNode/>
+    </treeNode>
+  </input>
+  <output>
+    <treeNode name="root" schemaDataType="OBJECT" level="1">
+      <node name="FinancialPositionLog" schemaDataType="OBJECT" level="2">
+        <node name="TransactionLogType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/TransactionLogType"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.0/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="ProductInstanceReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/ProductInstanceReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.1/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="CustomerReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/CustomerReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.2/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="CounterpartyReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/CounterpartyReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.3/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="BaseCurrency" schemaDataType="OBJECT" level="3">
+          <node name="Currencycode" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/BaseCurrency/Currencycode"/>
+            <properties key="nullable" value="false"/>
+            <outNode/>
+            <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.4/@node.0/@outNode/@outgoingLink.0"/>
+          </node>
+          <properties key="type" value="object"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/BaseCurrency"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <node name="InterestApplicationRecord" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/InterestApplicationRecord"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.5/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="ManagedPositionLimits" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/ManagedPositionLimits"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.6/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="PositionLimitType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/PositionLimitType"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.7/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="PositionLimitSettings" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/PositionLimitSettings"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.8/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="AmountBlock" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/AmountBlock"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.9/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="AmountBlockType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/AmountBlockType"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.10/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="Priority" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/Priority"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.11/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="DateType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/DateType"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.12/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="InitiationDate" schemaDataType="OBJECT" level="3">
+          <node name="DateContent" schemaDataType="STRING" level="4">
+            <properties key="type" value="string"/>
+            <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/InitiationDate/DateContent"/>
+            <properties key="nullable" value="false"/>
+            <outNode/>
+            <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.13/@node.0/@outNode/@outgoingLink.0"/>
+          </node>
+          <properties key="type" value="object"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/InitiationDate"/>
+          <properties key="nullable" value="false"/>
+          <properties key="properties_id" value="{Currencycode={id=http://wso2jsonschema.org/FinancialPositionLog/BaseCurrency/Currencycode, type=string}}"/>
+          <properties key="properties_id" value="{DateContent={id=http://wso2jsonschema.org/FinancialPositionLog/InitiationDate/DateContent, type=string}}"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <node name="Status" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog/Status"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.14/@outNode/@outgoingLink.0"/>
+        </node>
+        <properties key="type" value="object"/>
+        <properties key="id" value="http://wso2jsonschema.org/FinancialPositionLog"/>
+        <properties key="nullable" value="false"/>
+        <properties key="properties_id" value="{TransactionLogType={id=http://wso2jsonschema.org/FinancialPositionLog/TransactionLogType, type=string}, ProductInstanceReference={id=http://wso2jsonschema.org/FinancialPositionLog/ProductInstanceReference, type=string}, CustomerReference={id=http://wso2jsonschema.org/FinancialPositionLog/CustomerReference, type=string}, CounterpartyReference={id=http://wso2jsonschema.org/FinancialPositionLog/CounterpartyReference, type=string}, BaseCurrency={id=http://wso2jsonschema.org/FinancialPositionLog/BaseCurrency, type=object, properties={Currencycode={id=http://wso2jsonschema.org/FinancialPositionLog/BaseCurrency/Currencycode, type=string}}}, InterestApplicationRecord={id=http://wso2jsonschema.org/FinancialPositionLog/InterestApplicationRecord, type=string}, ManagedPositionLimits={id=http://wso2jsonschema.org/FinancialPositionLog/ManagedPositionLimits, type=string}, PositionLimitType={id=http://wso2jsonschema.org/FinancialPositionLog/PositionLimitType, type=string}, PositionLimitSettings={id=http://wso2jsonschema.org/FinancialPositionLog/PositionLimitSettings, type=string}, AmountBlock={id=http://wso2jsonschema.org/FinancialPositionLog/AmountBlock, type=string}, AmountBlockType={id=http://wso2jsonschema.org/FinancialPositionLog/AmountBlockType, type=string}, Priority={id=http://wso2jsonschema.org/FinancialPositionLog/Priority, type=string}, DateType={id=http://wso2jsonschema.org/FinancialPositionLog/DateType, type=string}, InitiationDate={id=http://wso2jsonschema.org/FinancialPositionLog/InitiationDate, type=object, properties={DateContent={id=http://wso2jsonschema.org/FinancialPositionLog/InitiationDate/DateContent, type=string}}}, Status={id=http://wso2jsonschema.org/FinancialPositionLog/Status, type=string}}"/>
+        <outNode/>
+        <inNode/>
+      </node>
+      <properties key="type" value="object"/>
+      <properties key="$schema" value="http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#"/>
+      <properties key="id" value="http://wso2jsonschema.org"/>
+      <properties key="nullable" value="false"/>
+      <outNode/>
+      <inNode/>
+    </treeNode>
+  </output>
+</datamapper:DataMapperRoot>

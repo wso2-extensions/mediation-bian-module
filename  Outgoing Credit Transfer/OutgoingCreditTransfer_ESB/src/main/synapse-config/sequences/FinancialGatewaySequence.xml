@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="FinancialGatewaySequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <property expression="json-eval($.FinancialGatewayId)" name="uri.var.financialgatewayid" scope="default" type="STRING"/>
+    <property expression="json-eval($.OutboundId)" name="uri.var.outboundid" scope="default" type="STRING"/>
+    <datamapper config="gov:datamapper/FinancialGatewayConfig.dmc" inputSchema="gov:datamapper/FinancialGatewayConfig_inputSchema.json" inputType="JSON" outputSchema="gov:datamapper/FinancialGatewayConfig_outputSchema.json" outputType="JSON" xsltStyleSheet="gov:datamapper/FinancialGatewayConfig_xsltStyleSheet.xml"/>
+    <call>
+        <endpoint key="FinancialGatewayEndpoint"/>
+    </call>
+</sequence>

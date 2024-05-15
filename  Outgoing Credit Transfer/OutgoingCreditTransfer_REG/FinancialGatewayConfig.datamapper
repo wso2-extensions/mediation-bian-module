@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datamapper:DataMapperRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:datamapper="http:///org/wso2/developerstudio/eclipse/gmf/datamapper">
+  <input>
+    <treeNode name="root" schemaDataType="OBJECT" level="1">
+      <node name="OutboundPayments" schemaDataType="OBJECT" level="2">
+        <node name="CorrespondentTransactionRecord" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/OutboundPayments/CorrespondentTransactionRecord"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <node name="SWIFTTransactionReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/OutboundPayments/SWIFTTransactionReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <node name="PayerBankReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/OutboundPayments/PayerBankReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <node name="PayerReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/OutboundPayments/PayerReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <node name="CorrespondedBankReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/OutboundPayments/CorrespondedBankReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <node name="PayerProductInstanceReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/OutboundPayments/PayerProductInstanceReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <node name="PayeeReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/OutboundPayments/PayeeReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <node name="PayeeProductInstanceReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/OutboundPayments/PayeeProductInstanceReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <node name="PayeeBankReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/OutboundPayments/PayeeBankReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <node name="SpecialInstructions" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/OutboundPayments/SpecialInstructions"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <node name="Amount" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/OutboundPayments/Amount"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <node name="Currency" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/OutboundPayments/Currency"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <node name="DateType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/OutboundPayments/DateType"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode/>
+        </node>
+        <properties key="type" value="object"/>
+        <properties key="id" value="http://wso2jsonschema.org/OutboundPayments"/>
+        <properties key="nullable" value="false"/>
+        <outNode/>
+        <inNode/>
+      </node>
+      <node name="FinancialGatewayOperatingSession" schemaDataType="OBJECT" level="2">
+        <node name="FinancialGatewayServiceType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialGatewayOperatingSession/FinancialGatewayServiceType"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.0/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="FinancialGatewayServiceSessionStatistics" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialGatewayOperatingSession/FinancialGatewayServiceSessionStatistics"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.1/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <properties key="type" value="object"/>
+        <properties key="id" value="http://wso2jsonschema.org/FinancialGatewayOperatingSession"/>
+        <properties key="nullable" value="false"/>
+        <outNode/>
+        <inNode/>
+      </node>
+      <node name="Outbound" schemaDataType="OBJECT" level="2">
+        <node name="FinancialGatewayOutboundMessageType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageType"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.1/@node.0/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="FinancialGatewayOutboundMessageRecord" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageRecord"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.1/@node.1/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="FinancialGatewayOutboundMessageSender" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageSender"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.1/@node.2/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="FinancialGatewayOutboundMessageReceiver" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageReceiver"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.1/@node.3/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="FinancialGatewayOutboundMessageStatus" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageStatus"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.1/@node.4/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <properties key="type" value="object"/>
+        <properties key="id" value="http://wso2jsonschema.org/Outbound"/>
+        <properties key="nullable" value="false"/>
+        <properties key="properties_id" value="{CorrespondentTransactionRecord={id=http://wso2jsonschema.org/OutboundPayments/CorrespondentTransactionRecord, type=string}, SWIFTTransactionReference={id=http://wso2jsonschema.org/OutboundPayments/SWIFTTransactionReference, type=string}, PayerBankReference={id=http://wso2jsonschema.org/OutboundPayments/PayerBankReference, type=string}, PayerReference={id=http://wso2jsonschema.org/OutboundPayments/PayerReference, type=string}, CorrespondedBankReference={id=http://wso2jsonschema.org/OutboundPayments/CorrespondedBankReference, type=string}, PayerProductInstanceReference={id=http://wso2jsonschema.org/OutboundPayments/PayerProductInstanceReference, type=string}, PayeeReference={id=http://wso2jsonschema.org/OutboundPayments/PayeeReference, type=string}, PayeeProductInstanceReference={id=http://wso2jsonschema.org/OutboundPayments/PayeeProductInstanceReference, type=string}, PayeeBankReference={id=http://wso2jsonschema.org/OutboundPayments/PayeeBankReference, type=string}, SpecialInstructions={id=http://wso2jsonschema.org/OutboundPayments/SpecialInstructions, type=string}, Amount={id=http://wso2jsonschema.org/OutboundPayments/Amount, type=string}, Currency={id=http://wso2jsonschema.org/OutboundPayments/Currency, type=string}, DateType={id=http://wso2jsonschema.org/OutboundPayments/DateType, type=string}}"/>
+        <properties key="properties_id" value="{FinancialGatewayServiceType={id=http://wso2jsonschema.org/FinancialGatewayOperatingSession/FinancialGatewayServiceType, type=string}, FinancialGatewayServiceSessionStatistics={id=http://wso2jsonschema.org/FinancialGatewayOperatingSession/FinancialGatewayServiceSessionStatistics, type=string}}"/>
+        <properties key="properties_id" value="{FinancialGatewayOutboundMessageType={id=http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageType, type=string}, FinancialGatewayOutboundMessageRecord={id=http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageRecord, type=string}, FinancialGatewayOutboundMessageSender={id=http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageSender, type=string}, FinancialGatewayOutboundMessageReceiver={id=http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageReceiver, type=string}, FinancialGatewayOutboundMessageStatus={id=http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageStatus, type=string}}"/>
+        <outNode/>
+        <inNode/>
+      </node>
+      <node name="FinancialGatewayId" schemaDataType="STRING" level="2">
+        <properties key="type" value="string"/>
+        <properties key="id" value="http://wso2jsonschema.org/FinancialGatewayId"/>
+        <properties key="nullable" value="false"/>
+        <outNode/>
+        <inNode/>
+      </node>
+      <node name="OutboundId" schemaDataType="STRING" level="2">
+        <properties key="type" value="string"/>
+        <properties key="id" value="http://wso2jsonschema.org/OutboundId"/>
+        <properties key="nullable" value="false"/>
+        <outNode/>
+        <inNode/>
+      </node>
+      <properties key="type" value="object"/>
+      <properties key="$schema" value="http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#"/>
+      <properties key="id" value="http://wso2jsonschema.org"/>
+      <properties key="nullable" value="false"/>
+      <outNode/>
+      <inNode/>
+    </treeNode>
+  </input>
+  <output>
+    <treeNode name="root" schemaDataType="OBJECT" level="1">
+      <node name="FinancialGatewayOperatingSession" schemaDataType="OBJECT" level="2">
+        <node name="FinancialGatewayServiceType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialGatewayOperatingSession/FinancialGatewayServiceType"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.1/@node.0/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="FinancialGatewayServiceSessionStatistics" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/FinancialGatewayOperatingSession/FinancialGatewayServiceSessionStatistics"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.1/@node.1/@outNode/@outgoingLink.0"/>
+        </node>
+        <properties key="type" value="object"/>
+        <properties key="id" value="http://wso2jsonschema.org/FinancialGatewayOperatingSession"/>
+        <properties key="nullable" value="false"/>
+        <outNode/>
+        <inNode/>
+      </node>
+      <node name="Outbound" schemaDataType="OBJECT" level="2">
+        <node name="FinancialGatewayOutboundMessageType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageType"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.2/@node.0/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="FinancialGatewayOutboundMessageRecord" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageRecord"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.2/@node.1/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="FinancialGatewayOutboundMessageSender" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageSender"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.2/@node.2/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="FinancialGatewayOutboundMessageReceiver" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageReceiver"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.2/@node.3/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="FinancialGatewayOutboundMessageStatus" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageStatus"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.2/@node.4/@outNode/@outgoingLink.0"/>
+        </node>
+        <properties key="type" value="object"/>
+        <properties key="id" value="http://wso2jsonschema.org/Outbound"/>
+        <properties key="nullable" value="false"/>
+        <properties key="properties_id" value="{FinancialGatewayServiceType={id=http://wso2jsonschema.org/FinancialGatewayOperatingSession/FinancialGatewayServiceType, type=string}, FinancialGatewayServiceSessionStatistics={id=http://wso2jsonschema.org/FinancialGatewayOperatingSession/FinancialGatewayServiceSessionStatistics, type=string}}"/>
+        <properties key="properties_id" value="{FinancialGatewayOutboundMessageType={id=http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageType, type=string}, FinancialGatewayOutboundMessageRecord={id=http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageRecord, type=string}, FinancialGatewayOutboundMessageSender={id=http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageSender, type=string}, FinancialGatewayOutboundMessageReceiver={id=http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageReceiver, type=string}, FinancialGatewayOutboundMessageStatus={id=http://wso2jsonschema.org/Outbound/FinancialGatewayOutboundMessageStatus, type=string}}"/>
+        <outNode/>
+        <inNode/>
+      </node>
+      <properties key="type" value="object"/>
+      <properties key="$schema" value="http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#"/>
+      <properties key="id" value="http://wso2jsonschema.org"/>
+      <properties key="nullable" value="false"/>
+      <outNode/>
+      <inNode/>
+    </treeNode>
+  </output>
+</datamapper:DataMapperRoot>

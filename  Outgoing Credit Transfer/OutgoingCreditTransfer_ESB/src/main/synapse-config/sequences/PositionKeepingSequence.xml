@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="PositionKeepingSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <clone sequential="true">
+        <target>
+            <sequence>
+                <sequence key="CurrentAccountSequence"/>
+                <call>
+                    <endpoint key="PaymentBackendPositionKeepingDetails"/>
+                </call>
+                <property expression="json-eval($.PositionKeepingId)" name="uri.var.positionkeepingid" scope="default" type="STRING"/>
+                <datamapper config="gov:datamapper/PositionKeepingConfig.dmc" inputSchema="gov:datamapper/PositionKeepingConfig_inputSchema.json" inputType="JSON" outputSchema="gov:datamapper/PositionKeepingConfig_outputSchema.json" outputType="JSON" xsltStyleSheet="gov:datamapper/PositionKeepingConfig_xsltStyleSheet.xml"/>
+                <call>
+                    <endpoint key="PaymentBackendPositionKeeping"/>
+                </call>
+            </sequence>
+        </target>
+        <target>
+            <sequence>
+                <call>
+                    <endpoint key="PaymentBackendInternalBankAccountDetails"/>
+                </call>
+                <sequence key="InternalBankAccountSequence"/>
+            </sequence>
+        </target>
+    </clone>
+</sequence>

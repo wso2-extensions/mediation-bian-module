@@ -1,0 +1,11 @@
+---
+key: "RegulatoryComplianceBackend-1.0.0"
+name : "RegulatoryComplianceBackend"
+displayName : "RegulatoryComplianceBackend"
+description: "Sample API"
+version: "1.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/RegulatoryCompliance"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/FinancialGatewayBackend" name="FinancialGatewayBackend" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" uri-template="/FinancialGateway/{financialgatewayid}/Outbound/{outboundid}/Initiate">
+        <inSequence>
+            <log level="full"/>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.financialgatewayid')" name="financialgatewayid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.outboundid')" name="outboundid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{
+						  "FinancialGatewayOperatingSession": {
+						    "FinancialGatewayServiceSessionStatistics": "string"
+						  },
+						  "Outbound": {
+						    "FinancialGatewayOutboundMessageStatus": "string"
+						  }
+						}
+				</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

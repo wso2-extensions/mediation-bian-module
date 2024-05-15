@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="InternalBankAccountSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <property expression="json-eval($.InternalBankAccountId)" name="uri.var.internalbankaccountid" scope="default" type="STRING"/>
+    <datamapper config="gov:datamapper/InternalBankAccountConfig.dmc" inputSchema="gov:datamapper/InternalBankAccountConfig_inputSchema.json" inputType="JSON" outputSchema="gov:datamapper/InternalBankAccountConfig_outputSchema.json" outputType="JSON" xsltStyleSheet="gov:datamapper/InternalBankAccountConfig_xsltStyleSheet.xml"/>
+    <call>
+        <endpoint key="PaymentBackendInternalBankAccount"/>
+    </call>
+</sequence>

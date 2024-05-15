@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/BIAN-3/BIAN/InternalBankAccount" name="InternalBankAccount" version="11.0.0" version-type="url" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="PUT" uri-template="/InternalBankAccount/{internalbankaccountid}/Capture">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.internalbankaccountid')" name="internalbankaccountid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <call>
+                <endpoint key="PaymentBackendInternalBankAccount"/>
+            </call>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/InternalBankAccount/{internalbankaccountid}/Control">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.internalbankaccountid')" name="internalbankaccountid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/InternalBankAccount/{internalbankaccountid}/Notify">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.internalbankaccountid')" name="internalbankaccountid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

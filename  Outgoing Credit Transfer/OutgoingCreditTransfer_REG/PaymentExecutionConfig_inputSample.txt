@@ -1,0 +1,20 @@
+[
+  {
+      "PaymentInitiationTransaction": {
+          "RecurringPaymentRecord": "string",
+          "RecurringPaymentCustomerReference": "string",
+          "RecurringPaymentReference": "string",
+          "DateType": "string",
+          "PaymentFeesCharges": "string",
+          "DocumentDirectoryEntryInstanceReference": "string"
+      }
+  },
+  {
+      "FinancialGatewayOperatingSession": {
+          "FinancialGatewayServiceSessionStatistics": "string"
+      },
+      "Outbound": {
+          "FinancialGatewayOutboundMessageStatus": "string"
+      }
+  }
+]

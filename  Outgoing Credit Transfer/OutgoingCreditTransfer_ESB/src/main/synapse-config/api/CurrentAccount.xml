@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/BIAN-3/BIAN/CurrentAccount" name="CurrentAccount" version="11.0.0" version-type="url" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" url-mapping="/CurrentAccount/Initiate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CurrentAccount/{currentaccountid}/Update">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/CurrentAccount/{currentaccountid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <log/>
+            <call>
+                <endpoint key="PaymentBackendCurrentAccount"/>
+            </call>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/CurrentAccount/{currentaccountid}/Interest/{interestid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.interestid')" name="interestid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/CurrentAccount/{currentaccountid}/ServiceFees/{servicefeesid}/Initiate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.servicefeesid')" name="servicefeesid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CurrentAccount/{currentaccountid}/ServiceFees/{servicefeesid}/Execute">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.servicefeesid')" name="servicefeesid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/CurrentAccount/{currentaccountid}/ServiceFees/{servicefeesid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.servicefeesid')" name="servicefeesid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/CurrentAccount/{currentaccountid}/AccountLien/{accountlienid}/Initiate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.accountlienid')" name="accountlienid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CurrentAccount/{currentaccountid}/AccountLien/{accountlienid}/Update">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.accountlienid')" name="accountlienid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/CurrentAccount/{currentaccountid}/AccountLien/{accountlienid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.accountlienid')" name="accountlienid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/CurrentAccount/{currentaccountid}/AccountSweep/{accountsweepid}/Initiate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.accountsweepid')" name="accountsweepid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CurrentAccount/{currentaccountid}/AccountSweep/{accountsweepid}/Update">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.accountsweepid')" name="accountsweepid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CurrentAccount/{currentaccountid}/AccountSweep/{accountsweepid}/Execute">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.accountsweepid')" name="accountsweepid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/CurrentAccount/{currentaccountid}/AccountSweep/{accountsweepid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.accountsweepid')" name="accountsweepid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/CurrentAccount/{currentaccountid}/DepositsandWithdrawals/{depositsandwithdrawalsid}/Initiate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.depositsandwithdrawalsid')" name="depositsandwithdrawalsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CurrentAccount/{currentaccountid}/DepositsandWithdrawals/{depositsandwithdrawalsid}/Update">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.depositsandwithdrawalsid')" name="depositsandwithdrawalsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CurrentAccount/{currentaccountid}/DepositsandWithdrawals/{depositsandwithdrawalsid}/Execute">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.depositsandwithdrawalsid')" name="depositsandwithdrawalsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/CurrentAccount/{currentaccountid}/DepositsandWithdrawals/{depositsandwithdrawalsid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.depositsandwithdrawalsid')" name="depositsandwithdrawalsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/CurrentAccount/{currentaccountid}/Payments/{paymentsid}/Initiate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.paymentsid')" name="paymentsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CurrentAccount/{currentaccountid}/Payments/{paymentsid}/Update">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.paymentsid')" name="paymentsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CurrentAccount/{currentaccountid}/Payments/{paymentsid}/Execute">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.paymentsid')" name="paymentsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/CurrentAccount/{currentaccountid}/Payments/{paymentsid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.paymentsid')" name="paymentsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/CurrentAccount/{currentaccountid}/IssuedDevice/{issueddeviceid}/Initiate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.issueddeviceid')" name="issueddeviceid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CurrentAccount/{currentaccountid}/IssuedDevice/{issueddeviceid}/Update">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.issueddeviceid')" name="issueddeviceid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CurrentAccount/{currentaccountid}/IssuedDevice/{issueddeviceid}/Request">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.issueddeviceid')" name="issueddeviceid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/CurrentAccount/{currentaccountid}/IssuedDevice/{issueddeviceid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.currentaccountid')" name="currentaccountid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.issueddeviceid')" name="issueddeviceid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

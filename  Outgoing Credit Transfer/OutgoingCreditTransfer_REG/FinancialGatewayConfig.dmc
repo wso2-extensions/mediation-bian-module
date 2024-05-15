@@ -1,0 +1,24 @@
+map_S_root_S_root = function(){ 
+var outputroot={};
+
+outputroot =  {};
+outputroot.FinancialGatewayOperatingSession =  {};
+outputroot.FinancialGatewayOperatingSession.FinancialGatewayServiceType = inputroot.FinancialGatewayOperatingSession.FinancialGatewayServiceType;
+outputroot.FinancialGatewayOperatingSession.FinancialGatewayServiceSessionStatistics = inputroot.FinancialGatewayOperatingSession.FinancialGatewayServiceSessionStatistics;
+outputroot.Outbound =  {};
+outputroot.Outbound.FinancialGatewayOutboundMessageType = inputroot.Outbound.FinancialGatewayOutboundMessageType;
+outputroot.Outbound.FinancialGatewayOutboundMessageRecord = inputroot.Outbound.FinancialGatewayOutboundMessageRecord;
+outputroot.Outbound.FinancialGatewayOutboundMessageSender = inputroot.Outbound.FinancialGatewayOutboundMessageSender;
+outputroot.Outbound.FinancialGatewayOutboundMessageReceiver = inputroot.Outbound.FinancialGatewayOutboundMessageReceiver;
+outputroot.Outbound.FinancialGatewayOutboundMessageStatus = inputroot.Outbound.FinancialGatewayOutboundMessageStatus;
+return outputroot;
+};
+
+
+
+
+
+
+
+
+

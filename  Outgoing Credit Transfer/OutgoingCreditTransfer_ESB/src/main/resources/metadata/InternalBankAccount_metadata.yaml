@@ -1,0 +1,11 @@
+---
+key: "InternalBankAccount-11.0.0"
+name : "InternalBankAccount"
+displayName : "InternalBankAccount"
+description: "Sample API"
+version: "11.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/BIAN-3/BIAN/InternalBankAccount/11.0.0"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"

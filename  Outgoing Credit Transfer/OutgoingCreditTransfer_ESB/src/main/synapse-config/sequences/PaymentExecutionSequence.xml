@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="PaymentExecutionSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <property expression="json-eval($.PaymentType)" name="paymenttype" scope="default" type="STRING"/>
+    <datamapper config="gov:datamapper/PaymentExecutionConfig.dmc" inputSchema="gov:datamapper/PaymentExecutionConfig_inputSchema.json" inputType="JSON" outputSchema="gov:datamapper/PaymentExecutionConfig_outputSchema.json" outputType="JSON" xsltStyleSheet="gov:datamapper/PaymentExecutionConfig_xsltStyleSheet.xml"/>
+    <call>
+        <endpoint key="PaymentBackendPaymentExecutionProcedure"/>
+    </call>
+    <log level="custom">
+        <property expression="get-property('paymenttype')" name="PaymentType"/>
+    </log>
+    <filter xpath="get-property('paymenttype') = 'InternalBankAccount'">
+        <then>
+            <sequence key="PositionKeepingSequence"/>
+        </then>
+        <else/>
+    </filter>
+    <filter xpath="get-property('paymenttype') = 'SettlementClearing'">
+        <then>
+            <call>
+                <endpoint key="PaymentBackendACHOperationsDetails"/>
+            </call>
+            <sequence key="ACHOperationsSequence"/>
+        </then>
+        <else/>
+    </filter>
+    <filter xpath="get-property('paymenttype') = 'SWIFTPayment'">
+        <then>
+            <call>
+                <endpoint key="PaymentBackendCorrespondentBankOperationsDetails"/>
+            </call>
+            <sequence key="CorrespondentBankOperationsSequence"/>
+        </then>
+        <else/>
+    </filter>
+</sequence>

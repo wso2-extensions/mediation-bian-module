@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="PaymentOrderSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <datamapper config="gov:datamapper/PaymentOrderConfig.dmc" inputSchema="gov:datamapper/PaymentOrderConfig_inputSchema.json" inputType="JSON" outputSchema="gov:datamapper/PaymentOrderConfig_outputSchema.json" outputType="JSON" xsltStyleSheet="gov:datamapper/PaymentOrderConfig_xsltStyleSheet.xml"/>
+    <call>
+        <endpoint key="PaymentBackendPaymentOrder"/>
+    </call>
+    <clone id="Clone_Response" sequential="true">
+        <target>
+            <sequence>
+                <log/>
+                <sequence key="CurrentAccountSequence"/>
+            </sequence>
+        </target>
+        <target>
+            <sequence>
+                <call>
+                    <endpoint key="PaymentBackendRegulatoryComplianceDetails"/>
+                </call>
+                <sequence key="RegulatoryComplianceSequence"/>
+            </sequence>
+        </target>
+    </clone>
+    <property name="Aggregated_Responses" scope="default">
+        <jsonObject/>
+    </property>
+    <aggregate id="Clone_Response">
+        <completeCondition>
+            <messageCount max="-1" min="-1"/>
+        </completeCondition>
+        <onComplete aggregateElementType="root" enclosingElementProperty="Aggregated_Responses" expression="json-eval($)" xmlns:ns="http://org.apache.synapse/xsd">
+            <call>
+                <endpoint key="PaymentBackendPaymentExecutionDetails"/>
+            </call>
+            <property expression="json-eval($.OutgoingCreditTransfer)" name="outgoingcredittransfer" scope="default" type="STRING"/>
+            <filter regex="true" source="boolean(get-property('outgoingcredittransfer'))">
+                <then>
+                    <sequence key="PaymentExecutionSequence"/>
+                </then>
+                <else/>
+            </filter>
+        </onComplete>
+    </aggregate>
+</sequence>

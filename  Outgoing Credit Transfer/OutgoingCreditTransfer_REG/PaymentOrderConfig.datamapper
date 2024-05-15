@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datamapper:DataMapperRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:datamapper="http:///org/wso2/developerstudio/eclipse/gmf/datamapper">
+  <input>
+    <treeNode name="root" schemaDataType="OBJECT" level="1">
+      <node name="PaymentOrderProcedure" schemaDataType="OBJECT" level="2">
+        <node name="PaymentTransactionInitiatorReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/PaymentTransactionInitiatorReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.0/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="PayerReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/PayerReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.1/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="PayerBankReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/PayerBankReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.2/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="PayerProductInstanceReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/PayerProductInstanceReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.3/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="PayeeReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/PayeeReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.4/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="PayeeBankReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/PayeeBankReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.5/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="PayeeProductInstanceReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/PayeeProductInstanceReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.6/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="Amount" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/Amount"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.7/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="Currency" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/Currency"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.8/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="DateType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/DateType"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.9/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="PaymentMechanismType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/PaymentMechanismType"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.10/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="PaymentInstructions" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/PaymentInstructions"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.11/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="InterestedParties" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/InterestedParties"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.12/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="ProductType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/ProductType"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.13/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="SettlementInstructions" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/SettlementInstructions"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.14/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <properties key="type" value="object"/>
+        <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure"/>
+        <properties key="nullable" value="false"/>
+        <properties key="properties_id" value="{RecurringPaymentRecord={id=http://wso2jsonschema.org/PaymentInitiationTransaction/RecurringPaymentRecord, type=string}, RecurringPaymentCustomerReference={id=http://wso2jsonschema.org/PaymentInitiationTransaction/RecurringPaymentCustomerReference, type=string}, RecurringPaymentReference={id=http://wso2jsonschema.org/PaymentInitiationTransaction/RecurringPaymentReference, type=string}, DateType={id=http://wso2jsonschema.org/PaymentInitiationTransaction/DateType, type=string}, PaymentFeesCharges={id=http://wso2jsonschema.org/PaymentInitiationTransaction/PaymentFeesCharges, type=string}, DocumentDirectoryEntryInstanceReference={id=http://wso2jsonschema.org/PaymentInitiationTransaction/DocumentDirectoryEntryInstanceReference, type=string}}"/>
+        <properties key="properties_id" value="{PaymentTransactionInitiatorReference={id=http://wso2jsonschema.org/PaymentOrderProcedure/PaymentTransactionInitiatorReference, type=string}, PayerReference={id=http://wso2jsonschema.org/PaymentOrderProcedure/PayerReference, type=string}, PayerBankReference={id=http://wso2jsonschema.org/PaymentOrderProcedure/PayerBankReference, type=string}, PayerProductInstanceReference={id=http://wso2jsonschema.org/PaymentOrderProcedure/PayerProductInstanceReference, type=string}, PayeeReference={id=http://wso2jsonschema.org/PaymentOrderProcedure/PayeeReference, type=string}, PayeeBankReference={id=http://wso2jsonschema.org/PaymentOrderProcedure/PayeeBankReference, type=string}, PayeeProductInstanceReference={id=http://wso2jsonschema.org/PaymentOrderProcedure/PayeeProductInstanceReference, type=string}, Amount={id=http://wso2jsonschema.org/PaymentOrderProcedure/Amount, type=string}, Currency={id=http://wso2jsonschema.org/PaymentOrderProcedure/Currency, type=string}, DateType={id=http://wso2jsonschema.org/PaymentOrderProcedure/DateType, type=string}, PaymentMechanismType={id=http://wso2jsonschema.org/PaymentOrderProcedure/PaymentMechanismType, type=string}, PaymentInstructions={id=http://wso2jsonschema.org/PaymentOrderProcedure/PaymentInstructions, type=string}, InterestedParties={id=http://wso2jsonschema.org/PaymentOrderProcedure/InterestedParties, type=string}, ProductType={id=http://wso2jsonschema.org/PaymentOrderProcedure/ProductType, type=string}, SettlementInstructions={id=http://wso2jsonschema.org/PaymentOrderProcedure/SettlementInstructions, type=string}}"/>
+        <outNode/>
+        <inNode/>
+      </node>
+      <properties key="type" value="object"/>
+      <properties key="$schema" value="http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#"/>
+      <properties key="id" value="http://wso2jsonschema.org"/>
+      <properties key="nullable" value="false"/>
+      <outNode/>
+      <inNode/>
+    </treeNode>
+  </input>
+  <output>
+    <treeNode name="root" schemaDataType="OBJECT" level="1">
+      <node name="PaymentOrderProcedure" schemaDataType="OBJECT" level="2">
+        <node name="PaymentTransactionInitiatorReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/PaymentTransactionInitiatorReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.0/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="PayerReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/PayerReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.1/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="PayerBankReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/PayerBankReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.2/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="PayerProductInstanceReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/PayerProductInstanceReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.3/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="PayeeReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/PayeeReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.4/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="PayeeBankReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/PayeeBankReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.5/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="PayeeProductInstanceReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/PayeeProductInstanceReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.6/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="Amount" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/Amount"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.7/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="Currency" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/Currency"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.8/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="DateType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/DateType"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.9/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="PaymentMechanismType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/PaymentMechanismType"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.10/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="PaymentInstructions" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/PaymentInstructions"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.11/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="InterestedParties" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/InterestedParties"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.12/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="ProductType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/ProductType"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.13/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="SettlementInstructions" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure/SettlementInstructions"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.14/@outNode/@outgoingLink.0"/>
+        </node>
+        <properties key="type" value="object"/>
+        <properties key="id" value="http://wso2jsonschema.org/PaymentOrderProcedure"/>
+        <properties key="nullable" value="false"/>
+        <properties key="properties_id" value="{PaymentTransactionInitiatorReference={id=http://wso2jsonschema.org/PaymentOrderProcedure/PaymentTransactionInitiatorReference, type=string}, PayerReference={id=http://wso2jsonschema.org/PaymentOrderProcedure/PayerReference, type=string}, PayerBankReference={id=http://wso2jsonschema.org/PaymentOrderProcedure/PayerBankReference, type=string}, PayerProductInstanceReference={id=http://wso2jsonschema.org/PaymentOrderProcedure/PayerProductInstanceReference, type=string}, PayeeReference={id=http://wso2jsonschema.org/PaymentOrderProcedure/PayeeReference, type=string}, PayeeBankReference={id=http://wso2jsonschema.org/PaymentOrderProcedure/PayeeBankReference, type=string}, PayeeProductInstanceReference={id=http://wso2jsonschema.org/PaymentOrderProcedure/PayeeProductInstanceReference, type=string}, Amount={id=http://wso2jsonschema.org/PaymentOrderProcedure/Amount, type=string}, Currency={id=http://wso2jsonschema.org/PaymentOrderProcedure/Currency, type=string}, DateType={id=http://wso2jsonschema.org/PaymentOrderProcedure/DateType, type=string}, PaymentMechanismType={id=http://wso2jsonschema.org/PaymentOrderProcedure/PaymentMechanismType, type=string}, PaymentInstructions={id=http://wso2jsonschema.org/PaymentOrderProcedure/PaymentInstructions, type=string}, InterestedParties={id=http://wso2jsonschema.org/PaymentOrderProcedure/InterestedParties, type=string}, ProductType={id=http://wso2jsonschema.org/PaymentOrderProcedure/ProductType, type=string}, SettlementInstructions={id=http://wso2jsonschema.org/PaymentOrderProcedure/SettlementInstructions, type=string}}"/>
+        <outNode/>
+        <inNode/>
+      </node>
+      <properties key="type" value="object"/>
+      <properties key="$schema" value="http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#"/>
+      <properties key="id" value="http://wso2jsonschema.org"/>
+      <properties key="nullable" value="false"/>
+      <outNode/>
+      <inNode/>
+    </treeNode>
+  </output>
+</datamapper:DataMapperRoot>

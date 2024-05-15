@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/BIAN-3/BIAN/CorrespondentBankOperations" name="CorrespondentBankOperations" version="11.0.0" version-type="url" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" url-mapping="/CorrespondentBankOperations/Initiate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/Update">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/Exchange">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/Execute">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/Notify">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/Request">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/InboundPayments/{inboundpaymentsid}/Update">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.inboundpaymentsid')" name="inboundpaymentsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/InboundPayments/{inboundpaymentsid}/Execute">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.inboundpaymentsid')" name="inboundpaymentsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/InboundPayments/{inboundpaymentsid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.inboundpaymentsid')" name="inboundpaymentsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/OutboundPayments/{outboundpaymentsid}/Update">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.outboundpaymentsid')" name="outboundpaymentsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/OutboundPayments/{outboundpaymentsid}/Execute">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.outboundpaymentsid')" name="outboundpaymentsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <call>
+                <endpoint key="PaymentBackendCorrespondentBankOperations"/>
+            </call>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/OutboundPayments/{outboundpaymentsid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.outboundpaymentsid')" name="outboundpaymentsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/ClearingandSettlement/{clearingandsettlementid}/Update">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.clearingandsettlementid')" name="clearingandsettlementid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/ClearingandSettlement/{clearingandsettlementid}/Request">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.clearingandsettlementid')" name="clearingandsettlementid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/ClearingandSettlement/{clearingandsettlementid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.clearingandsettlementid')" name="clearingandsettlementid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/Reconciliation/{reconciliationid}/Update">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.reconciliationid')" name="reconciliationid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/Reconciliation/{reconciliationid}/Request">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.reconciliationid')" name="reconciliationid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/Reconciliation/{reconciliationid}/Retrieve">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.reconciliationid')" name="reconciliationid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/InboundPayments/{inboundpaymentsid}/Exchange">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.inboundpaymentsid')" name="inboundpaymentsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/OutboundPayments/{outboundpaymentsid}/Exchange">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.outboundpaymentsid')" name="outboundpaymentsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/Reconciliation/{reconciliationid}/Execute">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.reconciliationid')" name="reconciliationid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/InboundPayments/{inboundpaymentsid}/Initiate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.inboundpaymentsid')" name="inboundpaymentsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/OutboundPayments/{outboundpaymentsid}/Initiate">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.outboundpaymentsid')" name="outboundpaymentsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/InboundPayments/{inboundpaymentsid}/Notify">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.inboundpaymentsid')" name="inboundpaymentsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/OutboundPayments/{outboundpaymentsid}/Notify">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.outboundpaymentsid')" name="outboundpaymentsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/Reconciliation/{reconciliationid}/Notify">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.reconciliationid')" name="reconciliationid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/InboundPayments/{inboundpaymentsid}/Request">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.inboundpaymentsid')" name="inboundpaymentsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="PUT" uri-template="/CorrespondentBankOperations/{correspondentbankoperationsid}/OutboundPayments/{outboundpaymentsid}/Request">
+        <inSequence>
+            <!--This is generated API skeleton.-->
+            <property expression="get-property('uri.var.correspondentbankoperationsid')" name="correspondentbankoperationsid" scope="default" type="STRING"/>
+            <property expression="get-property('uri.var.outboundpaymentsid')" name="outboundpaymentsid" scope="default" type="STRING"/>
+            <!--Business Logic Goes Here-->
+            <payloadFactory media-type="json">
+                <format>{"Response" : "Sample Response"}</format>
+                <args/>
+            </payloadFactory>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <respond/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datamapper:DataMapperRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:datamapper="http:///org/wso2/developerstudio/eclipse/gmf/datamapper">
+  <input>
+    <treeNode name="root" level="1">
+      <node name="PaymentInitiationTransaction" schemaDataType="OBJECT" level="2">
+        <node name="RecurringPaymentRecord" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/0/PaymentInitiationTransaction/RecurringPaymentRecord"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.0/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="RecurringPaymentCustomerReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/0/PaymentInitiationTransaction/RecurringPaymentCustomerReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.1/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="RecurringPaymentReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/0/PaymentInitiationTransaction/RecurringPaymentReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.2/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="DateType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/0/PaymentInitiationTransaction/DateType"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.3/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="PaymentFeesCharges" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/0/PaymentInitiationTransaction/PaymentFeesCharges"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.4/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <node name="DocumentDirectoryEntryInstanceReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/0/PaymentInitiationTransaction/DocumentDirectoryEntryInstanceReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode>
+            <outgoingLink inNode="//@output/@treeNode.0/@node.0/@node.5/@inNode"/>
+          </outNode>
+          <inNode/>
+        </node>
+        <properties key="type" value="object"/>
+        <properties key="id" value="http://wso2jsonschema.org/0/PaymentInitiationTransaction"/>
+        <properties key="nullable" value="false"/>
+        <properties key="properties_id" value="{RecurringPaymentRecord={id=http://wso2jsonschema.org/0/PaymentInitiationTransaction/RecurringPaymentRecord, type=string}, RecurringPaymentCustomerReference={id=http://wso2jsonschema.org/0/PaymentInitiationTransaction/RecurringPaymentCustomerReference, type=string}, RecurringPaymentReference={id=http://wso2jsonschema.org/0/PaymentInitiationTransaction/RecurringPaymentReference, type=string}, DateType={id=http://wso2jsonschema.org/0/PaymentInitiationTransaction/DateType, type=string}, PaymentFeesCharges={id=http://wso2jsonschema.org/0/PaymentInitiationTransaction/PaymentFeesCharges, type=string}, DocumentDirectoryEntryInstanceReference={id=http://wso2jsonschema.org/0/PaymentInitiationTransaction/DocumentDirectoryEntryInstanceReference, type=string}}"/>
+        <outNode/>
+        <inNode/>
+      </node>
+      <properties key="type" value="array"/>
+      <properties key="$schema" value="http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#"/>
+      <properties key="id" value="http://wso2jsonschema.org"/>
+      <properties key="items_id" value="http://wso2jsonschema.org/0"/>
+      <properties key="items_type" value="object"/>
+      <properties key="nullable" value="false"/>
+      <outNode/>
+      <inNode/>
+    </treeNode>
+  </input>
+  <output>
+    <treeNode name="root" schemaDataType="OBJECT" level="1">
+      <node name="PaymentInitiationTransaction" schemaDataType="OBJECT" level="2">
+        <node name="RecurringPaymentRecord" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentInitiationTransaction/RecurringPaymentRecord"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.0/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="RecurringPaymentCustomerReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentInitiationTransaction/RecurringPaymentCustomerReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.1/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="RecurringPaymentReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentInitiationTransaction/RecurringPaymentReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.2/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="DateType" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentInitiationTransaction/DateType"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.3/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="PaymentFeesCharges" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentInitiationTransaction/PaymentFeesCharges"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.4/@outNode/@outgoingLink.0"/>
+        </node>
+        <node name="DocumentDirectoryEntryInstanceReference" schemaDataType="STRING" level="3">
+          <properties key="type" value="string"/>
+          <properties key="id" value="http://wso2jsonschema.org/PaymentInitiationTransaction/DocumentDirectoryEntryInstanceReference"/>
+          <properties key="nullable" value="false"/>
+          <outNode/>
+          <inNode incomingLink="//@input/@treeNode.0/@node.0/@node.5/@outNode/@outgoingLink.0"/>
+        </node>
+        <properties key="type" value="object"/>
+        <properties key="id" value="http://wso2jsonschema.org/PaymentInitiationTransaction"/>
+        <properties key="nullable" value="false"/>
+        <properties key="properties_id" value="{RecurringPaymentRecord={id=http://wso2jsonschema.org/PaymentInitiationTransaction/RecurringPaymentRecord, type=string}, RecurringPaymentCustomerReference={id=http://wso2jsonschema.org/PaymentInitiationTransaction/RecurringPaymentCustomerReference, type=string}, RecurringPaymentReference={id=http://wso2jsonschema.org/PaymentInitiationTransaction/RecurringPaymentReference, type=string}, DateType={id=http://wso2jsonschema.org/PaymentInitiationTransaction/DateType, type=string}, PaymentFeesCharges={id=http://wso2jsonschema.org/PaymentInitiationTransaction/PaymentFeesCharges, type=string}, DocumentDirectoryEntryInstanceReference={id=http://wso2jsonschema.org/PaymentInitiationTransaction/DocumentDirectoryEntryInstanceReference, type=string}}"/>
+        <outNode/>
+        <inNode/>
+      </node>
+      <properties key="type" value="object"/>
+      <properties key="$schema" value="http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#"/>
+      <properties key="id" value="http://wso2jsonschema.org"/>
+      <properties key="nullable" value="false"/>
+      <outNode/>
+      <inNode/>
+    </treeNode>
+  </output>
+</datamapper:DataMapperRoot>

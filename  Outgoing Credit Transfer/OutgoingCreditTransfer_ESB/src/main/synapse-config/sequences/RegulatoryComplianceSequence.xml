@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="RegulatoryComplianceSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <datamapper config="gov:datamapper/RegulatoryComplianceConfig.dmc" inputSchema="gov:datamapper/RegulatoryComplianceConfig_inputSchema.json" inputType="JSON" outputSchema="gov:datamapper/RegulatoryComplianceConfig_outputSchema.json" outputType="JSON" xsltStyleSheet="gov:datamapper/RegulatoryComplianceConfig_xsltStyleSheet.xml"/>
+    <call>
+        <endpoint key="RegulatoryComplianceEndpoint"/>
+    </call>
+</sequence>

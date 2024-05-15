@@ -1,0 +1,47 @@
+{
+  "$schema" : "http://wso2.org/json-schema/wso2-data-mapper-v5.0.0/schema#",
+  "outputType" : "JSON",
+  "id" : "http://wso2jsonschema.org",
+  "title" : "root",
+  "type" : "object",
+  "properties" : {
+    "RegulatoryComplianceAssessment" : {
+      "id" : "http://wso2jsonschema.org/RegulatoryComplianceAssessment",
+      "type" : "object",
+      "properties" : {
+        "RegulatoryAssessmentType" : {
+          "id" : "http://wso2jsonschema.org/RegulatoryComplianceAssessment/RegulatoryAssessmentType",
+          "type" : "string"
+        },
+        "BusinessUnitReference" : {
+          "id" : "http://wso2jsonschema.org/RegulatoryComplianceAssessment/BusinessUnitReference",
+          "type" : "string"
+        },
+        "ProductandServiceReference" : {
+          "id" : "http://wso2jsonschema.org/RegulatoryComplianceAssessment/ProductandServiceReference",
+          "type" : "string"
+        },
+        "CustomerReference" : {
+          "id" : "http://wso2jsonschema.org/RegulatoryComplianceAssessment/CustomerReference",
+          "type" : "string"
+        },
+        "RegulatoryAuthorityReference" : {
+          "id" : "http://wso2jsonschema.org/RegulatoryComplianceAssessment/RegulatoryAuthorityReference",
+          "type" : "string"
+        },
+        "RegulationReference" : {
+          "id" : "http://wso2jsonschema.org/RegulatoryComplianceAssessment/RegulationReference",
+          "type" : "string"
+        },
+        "DocumentReference" : {
+          "id" : "http://wso2jsonschema.org/RegulatoryComplianceAssessment/DocumentReference",
+          "type" : "string"
+        },
+        "RegulatoryAssessmentWorkProducts" : {
+          "id" : "http://wso2jsonschema.org/RegulatoryComplianceAssessment/RegulatoryAssessmentWorkProducts",
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

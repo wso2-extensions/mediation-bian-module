@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="PaymentInitiationSequence" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+    <clone id="Payment_Initiation_Clone_Response" sequential="true">
+        <target>
+            <sequence>
+                <call>
+                    <endpoint key="PaymentBackendPaymentOrderDetails"/>
+                </call>
+                <sequence key="PaymentOrderSequence"/>
+            </sequence>
+        </target>
+        <target>
+            <sequence>
+                <call>
+                    <endpoint key="PymentBackendPaymentInitiation"/>
+                </call>
+                <respond/>
+            </sequence>
+        </target>
+    </clone>
+</sequence>

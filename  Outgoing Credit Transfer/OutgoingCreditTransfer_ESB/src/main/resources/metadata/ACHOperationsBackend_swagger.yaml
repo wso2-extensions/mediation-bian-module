@@ -1,0 +1,38 @@
+openapi: 3.0.1
+info:
+  title: ACHOperationsBackend
+  description: API Definition of ACHOperationsBackend
+  version: 1.0.0
+servers:
+- url: /ACHOperationsBackend
+paths:
+  /ACHOperations/{achoperationsid}/OutboundACH/{outboundachid}/Initiate:
+    post:
+      parameters:
+      - name: achoperationsid
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: outboundachid
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      requestBody:
+        description: Sample Payload
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                payload:
+                  type: object
+        required: false
+      responses:
+        default:
+          description: Default response

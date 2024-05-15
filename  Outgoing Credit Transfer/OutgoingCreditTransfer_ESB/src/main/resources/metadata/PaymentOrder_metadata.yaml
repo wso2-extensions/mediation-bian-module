@@ -1,0 +1,11 @@
+---
+key: "PaymentOrder-11.0.0"
+name : "PaymentOrder"
+displayName : "PaymentOrder"
+description: "Sample API"
+version: "11.0.0"
+serviceUrl: "https://{MI_HOST}:{MI_PORT}/BIAN-3/BIAN/PaymentOrder/11.0.0"
+definitionType: "OAS3"
+securityType: "BASIC"
+mutualSSLEnabled: false
+apiId : "null"
